@@ -13,6 +13,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////////
 
+//Nuevo comentarios para prueba
 #include <iostream>
 #include <cstring>
 #include <cstdio>
@@ -70,7 +71,7 @@ void Menu::Presentacion()
     cout << "-------------------------------------" << endl;
     gotoxy(45, 22);
     // Sleep(3000); ///Detiene la pantalla 3 segundos
-    // system("pause > nul"); /// Limpiar la pantalla después del retraso
+    // system("pause > nul"); /// Limpiar la pantalla despuï¿½s del retraso
 
 
   gotoxy(10, 25);
