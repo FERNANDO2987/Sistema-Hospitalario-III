@@ -324,6 +324,7 @@ void Menu::MenuPaciente()
 				setColor(WHITE);
                 break;
                 //se agrega comentario
+                ///se agrego otro
 
             case 4:
                 cls();
