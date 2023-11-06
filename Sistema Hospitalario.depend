@@ -1,0 +1,3064 @@
+# depslib dependency file v1.0
+1687219877 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+
+1687220707 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1687220743 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\fecha.h
+	<iostream>
+	<cstring>
+
+1686787284 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\persona.cpp
+	<iostream>
+	"Persona.h"
+	"Fecha.h"
+	"cstring"
+
+1686708445 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\persona.h
+	"Fecha.h"
+	"TipoDocumento.h"
+
+1686793004 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1686792987 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\tiempo.h
+
+1687221121 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\paciente.cpp
+	<iostream>
+	"Paciente.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"string"
+	"TipoDocumento.h"
+
+1687222424 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\paciente.h
+	<cstring>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1686710297 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1686880146 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\tipodocumento.h
+	<iostream>
+	<string>
+
+1686786267 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\src\archivopersona.cpp
+	"ArchivoPersona.h"
+
+1686786291 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\archivopersona.h
+	"Persona.h"
+
+1687220842 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+	<string>
+
+1687218226 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\archivopaciente.h
+	"Paciente.h"
+
+1686881853 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\profesional.cpp
+	<iostream>
+	<string>
+	"Profesional.h"
+
+1686881472 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\profesional.h
+	<string>
+
+1686877693 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\quirofano.cpp
+	<iostream>
+	"Quirofano.h"
+
+1686877432 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\quirofano.h
+	"Tiempo.h"
+
+1686879504 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\cirugia.cpp
+	<string>
+	"Cirugia.h"
+
+1686879504 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\cirugia.h
+
+1687134196 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1686881211 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1686881581 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1686881569 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\matricula.h
+
+1687120114 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\estadocolor.cpp
+	"EstadoColor.h"
+
+1687120113 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\estadocolor.h
+
+1687220011 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"Fecha.h"
+	"Tiempo.h"
+
+1687132947 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\menu.h
+
+1687211058 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\prueba.cpp
+	"prueba.h"
+
+1687211449 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\prueba.h
+
+1687220707 source:c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\pacientemanager.cpp
+	"PacienteManager.h"
+
+1687219955 c:\users\nahuel\onedrive\escritorio\proyecto hospitalario  laboii\sistema hospitalario\pacientemanager.h
+	"ArchivoPaciente.h"
+
+1687743326 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1687647371 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1687647371 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1687271314 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\fecha.h
+	<iostream>
+	<cstring>
+
+1686792987 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\tiempo.h
+
+1686880146 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\tipodocumento.h
+	<iostream>
+	<string>
+
+1687304126 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1687303911 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1687551413 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\profesional.h
+	<string>
+
+1687648819 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1687648807 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\cirugia.h
+	<string>
+
+1687829789 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\estadocolor.cpp
+	"EstadoColor.h"
+
+1687829942 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\estadocolor.h
+
+1687825015 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1687815100 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1687744783 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\menu.h
+
+1686881581 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1686881569 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\matricula.h
+
+1687832497 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<time.h>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"QuirofanoManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1687305456 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1687398579 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1687398115 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1687468251 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1686710297 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1687647381 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1687831411 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"Cirugia.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+
+1687826025 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"ArchivoCirugia.h"
+	"Paciente.h"
+
+1687291907 source:c:\users\nahuel\downloads\sistema hospitalario\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1687299700 c:\users\nahuel\downloads\sistema hospitalario\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1687270141 c:\users\nahuel\downloads\sistema hospitalario\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1687271314 c:\users\nahuel\downloads\sistema hospitalario\fecha.h
+	<iostream>
+	<cstring>
+
+1686792987 c:\users\nahuel\downloads\sistema hospitalario\tiempo.h
+
+1686880146 c:\users\nahuel\downloads\sistema hospitalario\tipodocumento.h
+	<iostream>
+	<string>
+
+1687301187 source:c:\users\nahuel\downloads\sistema hospitalario\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1686881211 c:\users\nahuel\downloads\sistema hospitalario\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1687300971 c:\users\nahuel\downloads\sistema hospitalario\profesional.h
+	<string>
+
+1686879504 source:c:\users\nahuel\downloads\sistema hospitalario\cirugia.cpp
+	<string>
+	"Cirugia.h"
+
+1686879504 c:\users\nahuel\downloads\sistema hospitalario\cirugia.h
+
+1687120114 source:c:\users\nahuel\downloads\sistema hospitalario\estadocolor.cpp
+	"EstadoColor.h"
+
+1687120113 c:\users\nahuel\downloads\sistema hospitalario\estadocolor.h
+
+1687220707 source:c:\users\nahuel\downloads\sistema hospitalario\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1687300436 source:c:\users\nahuel\downloads\sistema hospitalario\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+
+1687132947 c:\users\nahuel\downloads\sistema hospitalario\menu.h
+
+1686881581 source:c:\users\nahuel\downloads\sistema hospitalario\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1686881569 c:\users\nahuel\downloads\sistema hospitalario\matricula.h
+
+1687220011 source:c:\users\nahuel\downloads\sistema hospitalario\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"Fecha.h"
+	"Tiempo.h"
+
+1687271346 source:c:\users\nahuel\downloads\sistema hospitalario\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1687299700 source:c:\users\nahuel\downloads\sistema hospitalario\pacientemanager.cpp
+	<iostream>
+	"PacienteManager.h"
+
+1687301547 c:\users\nahuel\downloads\sistema hospitalario\pacientemanager.h
+	"ArchivoPaciente.h"
+	"Paciente.h"
+
+1687301187 source:c:\users\nahuel\downloads\sistema hospitalario\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1686877693 source:c:\users\nahuel\downloads\sistema hospitalario\quirofano.cpp
+	<iostream>
+	"Quirofano.h"
+
+1686877432 c:\users\nahuel\downloads\sistema hospitalario\quirofano.h
+	"Tiempo.h"
+
+1686793004 source:c:\users\nahuel\downloads\sistema hospitalario\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1686710297 source:c:\users\nahuel\downloads\sistema hospitalario\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1688071220 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1689638728 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1688402810 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\fecha.h
+	<iostream>
+	<cstring>
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\tiempo.h
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\tipodocumento.h
+	<iostream>
+	<string>
+
+1688071220 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\profesional.h
+	<string>
+
+1688071220 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1689818724 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\cirugia.h
+	<string>
+
+1688071889 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\estadocolor.cpp
+	"EstadoColor.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\estadocolor.h
+
+1689813426 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+	<sstream>
+	<cctype>
+
+1689821571 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1688433658 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\menu.h
+
+1689641761 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"ArchivoCirugia.h"
+	"Paciente.h"
+
+1688071889 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\matricula.h
+
+1689821680 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<time.h>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"QuirofanoManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1688069037 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1689871437 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<cstdlib>
+	<ctime>
+	<unordered_set>
+	"Cirugia.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"ProfesionalManager.h"
+	"rlutil.h"
+
+1688069037 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1688069037 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1688069037 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1688069037 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1689731920 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\profesionalmanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<iomanip>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1689731816 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1689821809 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1689641899 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\cirugiamanager.h
+	"Cirugia.h"
+	"Paciente.h"
+	"ArchivoCirugia.h"
+
+1689638968 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1689638875 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1687367698 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\archivocirugia.cpp
+	"ArchivoCirugia.h"
+
+1687367416 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1687367043 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\cirugia.h
+	<string>
+	<string>
+
+1687306130 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1687306081 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1687309022 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1687271314 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\fecha.h
+	<iostream>
+	<cstring>
+
+1686792987 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\tiempo.h
+
+1686880146 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\tipodocumento.h
+	<iostream>
+	<string>
+
+1687304126 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1687303911 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1687300971 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\profesional.h
+	<string>
+
+1687313038 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\cirugiamanager.cpp
+	"CirugiaManager.h"
+
+1687313032 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\cirugiamanager.h
+
+1687120114 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\estadocolor.cpp
+	"EstadoColor.h"
+
+1687120113 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\estadocolor.h
+
+1687220707 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1687373397 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"ProfesionalManager.h"
+
+1687373140 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\menu.h
+
+1687309173 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\pacientemanager.h
+	"ArchivoPaciente.h"
+	"Paciente.h"
+
+1687309173 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1686881581 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1686881569 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\matricula.h
+
+1687376822 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1687309022 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1687374424 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\pacientemanager.cpp
+	<iostream>
+	"PacienteManager.h"
+
+1687305456 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1687309842 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\profesionalmanager.cpp
+	<iostream>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+
+1686877693 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\quirofano.cpp
+	<iostream>
+	"Quirofano.h"
+
+1686877432 c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\quirofano.h
+	"Tiempo.h"
+
+1686793004 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1686710297 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1687372828 source:c:\users\lourdes\desktop\sistema hospitalario sin menu\sistema hospitalario\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1687743635 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1689821100 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\quirofanomanager.cpp
+	<iostream>
+	<string>
+	<cctype>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1689818613 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1688071220 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1687394428 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1687396691 c:\users\lourdes\desktop\matiitas\sistema hospitalario\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1687398052 c:\users\lourdes\desktop\matiitas\sistema hospitalario\cirugia.h
+	<string>
+
+1687306130 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1687306081 c:\users\lourdes\desktop\matiitas\sistema hospitalario\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1687391059 c:\users\lourdes\desktop\matiitas\sistema hospitalario\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1687271314 c:\users\lourdes\desktop\matiitas\sistema hospitalario\fecha.h
+	<iostream>
+	<cstring>
+
+1686792987 c:\users\lourdes\desktop\matiitas\sistema hospitalario\tiempo.h
+
+1686880146 c:\users\lourdes\desktop\matiitas\sistema hospitalario\tipodocumento.h
+	<iostream>
+	<string>
+
+1687304126 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1687303911 c:\users\lourdes\desktop\matiitas\sistema hospitalario\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1687551413 c:\users\lourdes\desktop\matiitas\sistema hospitalario\profesional.h
+	<string>
+
+1687398388 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1687398156 c:\users\lourdes\desktop\matiitas\sistema hospitalario\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1687398115 c:\users\lourdes\desktop\matiitas\sistema hospitalario\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1687372828 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1687468019 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+
+1687393676 c:\users\lourdes\desktop\matiitas\sistema hospitalario\cirugiamanager.h
+	"Cirugia.h"
+	"ArchivoCirugia.h"
+
+1687120114 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\estadocolor.cpp
+	"EstadoColor.h"
+
+1687120113 c:\users\lourdes\desktop\matiitas\sistema hospitalario\estadocolor.h
+
+1687220707 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1686881581 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1686881569 c:\users\lourdes\desktop\matiitas\sistema hospitalario\matricula.h
+
+1687396049 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1687394601 c:\users\lourdes\desktop\matiitas\sistema hospitalario\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1687394748 c:\users\lourdes\desktop\matiitas\sistema hospitalario\menu.h
+
+1687309173 c:\users\lourdes\desktop\matiitas\sistema hospitalario\pacientemanager.h
+	"ArchivoPaciente.h"
+	"Paciente.h"
+
+1687309173 c:\users\lourdes\desktop\matiitas\sistema hospitalario\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1687309022 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1687392032 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\pacientemanager.cpp
+	<iostream>
+	<string>
+	"PacienteManager.h"
+
+1687305456 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1687557305 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\profesionalmanager.cpp
+	<iostream>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+
+1687398579 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1687468590 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\quirofanomanager.cpp
+	<iostream>
+	<string>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1687397514 c:\users\lourdes\desktop\matiitas\sistema hospitalario\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1687468251 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1686710297 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1687557466 source:c:\users\lourdes\desktop\matiitas\sistema hospitalario\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1687394428 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1687396691 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1687398052 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\cirugia.h
+	<string>
+
+1687306130 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1687306081 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1687391059 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1687271314 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\fecha.h
+	<iostream>
+	<cstring>
+
+1686792987 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\tiempo.h
+
+1686880146 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\tipodocumento.h
+	<iostream>
+	<string>
+
+1687304126 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1687303911 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1687551413 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\profesional.h
+	<string>
+
+1687398388 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1687398156 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1687398115 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1687372828 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1687468019 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+
+1687393676 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\cirugiamanager.h
+	"Cirugia.h"
+	"ArchivoCirugia.h"
+
+1687120114 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\estadocolor.cpp
+	"EstadoColor.h"
+
+1687120113 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\estadocolor.h
+
+1687220707 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1687573434 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1687394748 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\menu.h
+
+1687645763 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"Paciente.h"
+
+1687397514 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1687309173 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1687394601 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1686881581 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1686881569 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\matricula.h
+
+1687396049 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1687309022 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1687573892 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"PacienteManager.h"
+
+1687305456 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1687557305 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\profesionalmanager.cpp
+	<iostream>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+
+1687398579 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1687468590 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\quirofanomanager.cpp
+	<iostream>
+	<string>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1687468251 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1686710297 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta (2)\sistema hospitalario\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1687651445 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1687651123 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1687648807 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\cirugia.h
+	<string>
+
+1687743326 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1687647371 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1687647371 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1687271314 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\fecha.h
+	<iostream>
+	<cstring>
+
+1686792987 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\tiempo.h
+
+1686880146 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\tipodocumento.h
+	<iostream>
+	<string>
+
+1687304126 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1687303911 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1687551413 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\profesional.h
+	<string>
+
+1687398388 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1687398156 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1687398115 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1687648819 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1687668115 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+	"PacienteManager.h"
+
+1687737545 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\cirugiamanager.h
+	"Cirugia.h"
+	"Paciente.h"
+	"ArchivoCirugia.h"
+
+1687734697 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"ArchivoCirugia.h"
+	"Paciente.h"
+
+1687120114 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\estadocolor.cpp
+	"EstadoColor.h"
+
+1687120113 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\estadocolor.h
+
+1687220707 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1686881581 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1686881569 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\matricula.h
+
+1687647381 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1687736111 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"Cirugia.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+
+1687305456 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1687557305 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\profesionalmanager.cpp
+	<iostream>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+
+1687309173 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1687398579 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1687468590 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\quirofanomanager.cpp
+	<iostream>
+	<string>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1687397514 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1687468251 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1686710297 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1687745339 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1687744783 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\menu.h
+
+1687743635 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1687746988 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<time.h>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1687651445 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1687651123 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1687398388 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1687398156 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1687829592 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1687828892 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\cirugiamanager.h
+	"Cirugia.h"
+	"Paciente.h"
+	"ArchivoCirugia.h"
+
+1687743635 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1687397514 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1687825435 c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1687831849 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\profesionalmanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+
+1687832275 source:c:\users\fpalacio\desktop\nueva carpeta\nueva carpeta\sistema hospitalario\quirofanomanager.cpp
+	<iostream>
+	<string>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1688068734 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1688069037 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\cirugia.h
+	<string>
+
+1688071220 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\fecha.h
+	<iostream>
+	<cstring>
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\tiempo.h
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\tipodocumento.h
+	<iostream>
+	<string>
+
+1688071220 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\profesional.h
+	<string>
+
+1688071220 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1688071220 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\cirugiamanager.h
+	"Cirugia.h"
+	"Paciente.h"
+	"ArchivoCirugia.h"
+
+1688068109 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"ArchivoCirugia.h"
+	"Paciente.h"
+
+1687743635 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1688071889 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\estadocolor.cpp
+	"EstadoColor.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\estadocolor.h
+
+1688071889 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1688068734 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\menu.h
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1688071889 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1688068734 c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\matricula.h
+
+1688071889 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<time.h>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"QuirofanoManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1688069037 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1688068734 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<cstdlib>
+	<ctime>
+	<unordered_set>
+	"Cirugia.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+
+1688069037 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1688069037 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\profesionalmanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+
+1688069037 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1688069037 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\quirofanomanager.cpp
+	<iostream>
+	<string>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1688069037 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1688069037 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1688071220 source:c:\users\nahuel\onedrive\escritorio\proyecto\sistema hospitalario27-6\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1687651445 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1687651123 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1687990145 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\cirugia.h
+	<string>
+
+1688010748 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1688010719 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1688001839 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1687271314 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\fecha.h
+	<iostream>
+	<cstring>
+
+1686792987 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\tiempo.h
+
+1686880146 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\tipodocumento.h
+	<iostream>
+	<string>
+
+1687304126 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1687303911 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1687551413 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\profesional.h
+	<string>
+
+1687398388 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1687398156 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1687398115 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1687992941 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1688056566 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1688000996 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\cirugiamanager.h
+	"Cirugia.h"
+	"Paciente.h"
+	"ArchivoCirugia.h"
+
+1687999559 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"ArchivoCirugia.h"
+	"Paciente.h"
+
+1687743635 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1687829789 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\estadocolor.cpp
+	"EstadoColor.h"
+
+1687829942 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\estadocolor.h
+
+1687825015 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1687815100 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1687913583 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\menu.h
+
+1687397514 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1688002724 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1686881581 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1686881569 c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\matricula.h
+
+1688057448 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<time.h>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"QuirofanoManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1688001839 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1688056751 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<cstdlib>
+	<ctime>
+	<unordered_set>
+	"Cirugia.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+
+1687305456 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1688057573 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\profesionalmanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+
+1687398579 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1687908346 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\quirofanomanager.cpp
+	<iostream>
+	<string>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1687468251 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1686710297 source:c:\users\fpalacio\desktop\nueva carpeta\sistema hospitalario27-6\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1687651445 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1687651123 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1687990145 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\cirugia.h
+	<string>
+
+1688058624 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1688058624 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1688001839 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1687271314 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\fecha.h
+	<iostream>
+	<cstring>
+
+1686792987 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\tiempo.h
+
+1686880146 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\tipodocumento.h
+	<iostream>
+	<string>
+
+1687304126 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1687303911 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1687551413 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\profesional.h
+	<string>
+
+1687398388 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1687398156 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1687398115 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1687992941 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1687829789 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\estadocolor.cpp
+	"EstadoColor.h"
+
+1687829942 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\estadocolor.h
+
+1687825015 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1687815100 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1687913583 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\menu.h
+
+1687999559 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"ArchivoCirugia.h"
+	"Paciente.h"
+
+1687397514 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1688002724 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1688000996 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\cirugiamanager.h
+	"Cirugia.h"
+	"Paciente.h"
+	"ArchivoCirugia.h"
+
+1687743635 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1686881581 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1686881569 c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\matricula.h
+
+1688057448 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<time.h>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"QuirofanoManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1688001839 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1688058679 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<cstdlib>
+	<ctime>
+	<unordered_set>
+	"Cirugia.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+
+1687305456 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1688057573 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\profesionalmanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+
+1687398579 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1687908346 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\quirofanomanager.cpp
+	<iostream>
+	<string>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1687468251 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1686710297 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1688059028 source:c:\users\wachin\desktop\sostema hospta\sistema hospitalario27-6\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1688068734 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1688069037 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\cirugia.h
+	<string>
+
+1688071220 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\fecha.h
+	<iostream>
+	<cstring>
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\tiempo.h
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\tipodocumento.h
+	<iostream>
+	<string>
+
+1688071220 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\profesional.h
+	<string>
+
+1688071220 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1688071220 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1688071220 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\cirugiamanager.h
+	"Cirugia.h"
+	"Paciente.h"
+	"ArchivoCirugia.h"
+
+1688068109 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"ArchivoCirugia.h"
+	"Paciente.h"
+
+1687743635 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1688071889 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\estadocolor.cpp
+	"EstadoColor.h"
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\estadocolor.h
+
+1688071889 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1688068734 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\menu.h
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1688071889 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1688068734 c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\matricula.h
+
+1688071889 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<time.h>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"QuirofanoManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1688069037 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1688069037 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1688069037 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\profesionalmanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+
+1688069037 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1688069037 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\quirofanomanager.cpp
+	<iostream>
+	<string>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1688069037 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1688069037 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1688068734 source:c:\users\wachin\desktop\sistema hospitalario agregar comentarios\sistema hospitalario27-6\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<cstdlib>
+	<ctime>
+	<unordered_set>
+	"Cirugia.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+
+1689638968 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1689638875 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1688068734 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\cirugia.h
+	<string>
+
+1688071220 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1689638728 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1688068734 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1688402810 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\fecha.h
+	<iostream>
+	<cstring>
+
+1688068734 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\tiempo.h
+
+1688068734 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\tipodocumento.h
+	<iostream>
+	<string>
+
+1688071220 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1688068734 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1688068734 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\profesional.h
+	<string>
+
+1688071220 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1688068734 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1688068734 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1688071220 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1689817394 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1689641899 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\cirugiamanager.h
+	"Cirugia.h"
+	"Paciente.h"
+	"ArchivoCirugia.h"
+
+1689641761 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"ArchivoCirugia.h"
+	"Paciente.h"
+
+1687743635 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1688071889 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\estadocolor.cpp
+	"EstadoColor.h"
+
+1688068734 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\estadocolor.h
+
+1688425382 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1688433658 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\menu.h
+
+1689727494 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1689731816 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1688071889 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1688068734 c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\matricula.h
+
+1689815234 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<time.h>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"QuirofanoManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1688069037 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1689731981 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<cstdlib>
+	<ctime>
+	<unordered_set>
+	"Cirugia.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"ProfesionalManager.h"
+	"rlutil.h"
+
+1688069037 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1689731920 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\profesionalmanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<iomanip>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1688069037 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1689732150 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\quirofanomanager.cpp
+	<iostream>
+	<string>
+	<cctype>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1688069037 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1688069037 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1689813426 source:c:\users\lourdes\desktop\sistema hospitalario que paso nahuel\sistema hospitalario\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+	<sstream>
+	<cctype>
+
+1688068734 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1688069037 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1688068734 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\cirugia.h
+	<string>
+
+1688071220 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1688068734 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1688068734 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1688402810 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\fecha.h
+	<iostream>
+	<cstring>
+
+1688068734 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\tiempo.h
+
+1688068734 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\tipodocumento.h
+	<iostream>
+	<string>
+
+1688071220 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1688068734 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1688068734 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\profesional.h
+	<string>
+
+1688071220 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1688068734 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1688068734 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1688071220 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1689636853 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1689636622 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\cirugiamanager.h
+	"Cirugia.h"
+	"Paciente.h"
+	"ArchivoCirugia.h"
+
+1688433262 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"ArchivoCirugia.h"
+	"Paciente.h"
+
+1687743635 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1688071889 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\estadocolor.cpp
+	"EstadoColor.h"
+
+1688068734 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\estadocolor.h
+
+1688833903 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+	<sstream>
+	<cctype>
+
+1688425382 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1688433658 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\menu.h
+
+1688068734 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1688068734 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1688071889 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1688068734 c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\matricula.h
+
+1688773738 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<time.h>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"QuirofanoManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1688069037 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1689634712 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<cstdlib>
+	<ctime>
+	<unordered_set>
+	"Cirugia.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+
+1688069037 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1688928778 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\profesionalmanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+
+1688069037 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1688931250 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\quirofanomanager.cpp
+	<iostream>
+	<string>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1688069037 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1688069037 source:c:\users\wachin\desktop\sist hospitalario17-7\sistema hospitalario\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1689638968 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1689638875 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1689818724 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\cirugia.h
+	<string>
+
+1688071220 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1689638728 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1688068734 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1688402810 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\fecha.h
+	<iostream>
+	<cstring>
+
+1688068734 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\tiempo.h
+
+1688068734 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\tipodocumento.h
+	<iostream>
+	<string>
+
+1688071220 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1688068734 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1688068734 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\profesional.h
+	<string>
+
+1688071220 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1688068734 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1688068734 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1688071220 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1689821809 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1689641899 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\cirugiamanager.h
+	"Cirugia.h"
+	"Paciente.h"
+	"ArchivoCirugia.h"
+
+1689641761 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"ArchivoCirugia.h"
+	"Paciente.h"
+
+1687743635 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1688071889 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\estadocolor.cpp
+	"EstadoColor.h"
+
+1688068734 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\estadocolor.h
+
+1689813426 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+	<sstream>
+	<cctype>
+
+1689821571 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1688433658 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\menu.h
+
+1689818613 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1689731816 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1688071889 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1688068734 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\matricula.h
+
+1689821680 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<time.h>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"QuirofanoManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1688069037 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1698717370 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<cstdlib>
+	<ctime>
+	<unordered_set>
+	"Cirugia.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"ProfesionalManager.h"
+	<iomanip>
+	"rlutil.h"
+
+1688069037 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1689731920 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\profesionalmanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<iomanip>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1688069037 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1689821100 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\quirofanomanager.cpp
+	<iostream>
+	<string>
+	<cctype>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1688069037 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1688069037 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\lab ii septienbre\sistema hospitalario\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+
+1698888761 source:c:\users\lourdes\desktop\sistemahospitalario2\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\cirugia.h
+	<string>
+
+1698888761 source:c:\users\lourdes\desktop\sistemahospitalario2\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\fecha.h
+	<iostream>
+	<cstring>
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\tiempo.h
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\tipodocumento.h
+	<iostream>
+	<string>
+
+1698888761 source:c:\users\lourdes\desktop\sistemahospitalario2\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\profesional.h
+	<string>
+
+1698888761 source:c:\users\lourdes\desktop\sistemahospitalario2\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1698888761 source:c:\users\lourdes\desktop\sistemahospitalario2\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1699055301 source:c:\users\lourdes\desktop\sistemahospitalario2\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\cirugiamanager.h
+	"Cirugia.h"
+	"Paciente.h"
+	"ArchivoCirugia.h"
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"ArchivoCirugia.h"
+	"Paciente.h"
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1698888761 source:c:\users\lourdes\desktop\sistemahospitalario2\estadocolor.cpp
+	"EstadoColor.h"
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\estadocolor.h
+
+1699057216 source:c:\users\lourdes\desktop\sistemahospitalario2\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+	<sstream>
+	<cctype>
+
+1698888761 source:c:\users\lourdes\desktop\sistemahospitalario2\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\menu.h
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1698888761 source:c:\users\lourdes\desktop\sistemahospitalario2\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1698888761 c:\users\lourdes\desktop\sistemahospitalario2\matricula.h
+
+1698888978 source:c:\users\lourdes\desktop\sistemahospitalario2\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<time.h>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"QuirofanoManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1698888761 source:c:\users\lourdes\desktop\sistemahospitalario2\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1698973108 source:c:\users\lourdes\desktop\sistemahospitalario2\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<cstdlib>
+	<ctime>
+	<unordered_set>
+	"Cirugia.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"ProfesionalManager.h"
+	<iomanip>
+	"rlutil.h"
+
+1698888761 source:c:\users\lourdes\desktop\sistemahospitalario2\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1698973108 source:c:\users\lourdes\desktop\sistemahospitalario2\profesionalmanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<iomanip>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1698888761 source:c:\users\lourdes\desktop\sistemahospitalario2\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1699055487 source:c:\users\lourdes\desktop\sistemahospitalario2\quirofanomanager.cpp
+	<iostream>
+	<string>
+	<cctype>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1698888761 source:c:\users\lourdes\desktop\sistemahospitalario2\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1698888761 source:c:\users\lourdes\desktop\sistemahospitalario2\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+

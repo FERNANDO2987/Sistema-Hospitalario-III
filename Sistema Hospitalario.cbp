@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Sistema Hospitalario" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Sistema Hospitalario" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../Sistema Hospitalario" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Sistema Hospitalario" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="../Sistema Hospitalario" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="ArchivoCirugia.cpp" />
+		<Unit filename="ArchivoCirugia.h" />
+		<Unit filename="ArchivoPaciente.cpp" />
+		<Unit filename="ArchivoPaciente.h" />
+		<Unit filename="ArchivoProfesional.cpp" />
+		<Unit filename="ArchivoProfesional.h" />
+		<Unit filename="ArchivoQuirofano.cpp" />
+		<Unit filename="ArchivoQuirofano.h" />
+		<Unit filename="Cirugia.cpp" />
+		<Unit filename="Cirugia.h" />
+		<Unit filename="CirugiaManager.cpp" />
+		<Unit filename="CirugiaManager.h" />
+		<Unit filename="EstadoColor.cpp" />
+		<Unit filename="EstadoColor.h" />
+		<Unit filename="Fecha.cpp" />
+		<Unit filename="Fecha.h" />
+		<Unit filename="Matricula.cpp" />
+		<Unit filename="Matricula.h" />
+		<Unit filename="Menu.cpp" />
+		<Unit filename="Menu.h" />
+		<Unit filename="Paciente.cpp" />
+		<Unit filename="Paciente.h" />
+		<Unit filename="PacienteManager.cpp" />
+		<Unit filename="PacienteManager.h" />
+		<Unit filename="Profesional.cpp" />
+		<Unit filename="Profesional.h" />
+		<Unit filename="ProfesionalManager.cpp" />
+		<Unit filename="ProfesionalManager.h" />
+		<Unit filename="Quirofano.cpp" />
+		<Unit filename="Quirofano.h" />
+		<Unit filename="QuirofanoManager.cpp" />
+		<Unit filename="QuirofanoManager.h" />
+		<Unit filename="Tiempo.cpp" />
+		<Unit filename="Tiempo.h" />
+		<Unit filename="TipoDocumento.cpp" />
+		<Unit filename="TipoDocumento.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
