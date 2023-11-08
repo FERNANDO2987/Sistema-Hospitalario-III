@@ -18,7 +18,7 @@
 #include <string>
 #include "Fecha.h"
 #include "Tiempo.h"
-#include "TipoDocumento.h"
+
 
 class Paciente{
 private:
