@@ -91,92 +91,84 @@ int obtenerEnteroValidado(const string& mensaje) {
 }
 
 
-void PacienteManager::Cargar(){
-	Paciente reg;
- bool estado;
-  string genero;
-  int documento;
-  string nombre;
-  string apellido;
-  int id;
-  string mail;
-  string diagnostico;
-  string patologia;
-  int HC;
-  int d, m, a;
-  string profesional;
-  Fecha fechaNac;
-  Fecha fechaAlta;
-  Fecha fechaOperacion;
-  ProfesionalManager profManager;
-  int IDProfesional;
+void PacienteManager::Cargar() {
+    Paciente reg;
+    bool estado;
+    string genero;
+    int documento;
+    string nombre;
+    string apellido;
+    int id;
+    string mail;
+    string diagnostico;
+    string patologia;
+    int HC;
+    int d, m, a;
+    string profesional;
+    Fecha fechaNac;
+    Fecha fechaAlta;
+    ProfesionalManager profManager;
+    int IDProfesional;
 
+    cout << "==================================" << endl;
+    cout << "  INGRESE LOS DATOS DEL PACIENTE: " << endl;
+    cout << "==================================" << endl << endl;
+    id = generarID();
+    cout << "ID : " << id << endl;
+    if (validarID(reg, id)) {
+        cout << "ID ya utilizado" << endl;
+    } else {
+        cout << "Nombre: ";
+        getline(cin, nombre);
 
+        cout << "Apellido: ";
+        getline(cin, apellido);
 
-  cout << "=================================="<<endl;
-  cout << "  INGRESE LOS DATOS DEL PACIENTE: " << endl;
-  cout << "=================================="<<endl<<endl;
-  id = generarID();
-  cout << "ID : " <<id<<endl;
-	if(validarID(reg,id)){
-			cout << "ID ya utilizado"<<endl;
+        cout << "Fecha de nacimiento (dd mm aaaa): ";
+        fechaNac.Cargar();
 
-	}else{
+        // Remove the date of operation section
+        // fechaOperacion.CargaFechaOperacion();
 
- // cin.ignore();
-  cout << "Nombre: ";
-  getline(cin, nombre);
+        cout << "Documento: ";
+        documento = obtenerEnteroValidado("");
 
-  cout << "Apellido: ";
-  getline(cin, apellido);
-  do{
-  cout << "Fecha de nacimiento (dd mm aaaa): ";
-  fechaNac.Cargar();
-  cout << "Fecha Operacion (dd mm aaaa): ";
-  fechaOperacion.CargaFechaOperacion();
-  if (fechaNac.toString("YYYY/MM/DD") <= fechaOperacion.toString("YYYY/MM/DD")){
-    cout << "Documento: ";
-  documento = obtenerEnteroValidado("");
+        cout << "Genero: ";
+        getline(cin, genero);
 
-  cout << "Genero: ";
-  getline(cin, genero);
-  cout << "Email: ";
-  getline(cin, mail);
-  cout << "Diagnostico: ";
-  getline(cin, diagnostico);
-  HC = generarHistoriaClinica();
-  cout << "Historial clinico: " << HC <<endl;
-  system("pause");
-  cls();
+        cout << "Email: ";
+        getline(cin, mail);
 
+        cout << "Diagnostico: ";
+        getline(cin, diagnostico);
 
+        HC = generarHistoriaClinica();
+        cout << "Historial clinico: " << HC << endl;
+        system("pause");
+        cls();
 
-  cout<<"ID "<<"  APELLIDO   "<<"  NOMBRE  "<< "  ESPECIALIDAD  " << endl;
-  profManager.ListarTodosParaPaciente();
+        cout << "ID " << "  APELLIDO   " << "  NOMBRE  " << "  ESPECIALIDAD  " << endl;
+        profManager.ListarTodosParaPaciente();
 
-do{
-  cout << endl << "Ingrese el ID del Profesional que desee:";
-  IDProfesional = obtenerEnteroValidado("");
+        do {
+            cout << endl << "Ingrese el ID del Profesional que desee:";
+            IDProfesional = obtenerEnteroValidado("");
 
-  profesional = profManager.BuscarPorIDParaPaciente(IDProfesional);
-  }while (profesional == "nada");
+            profesional = profManager.BuscarPorIDParaPaciente(IDProfesional);
+        } while (profesional == "nada");
 
-  estado = true;
+        estado = true;
 
-
-
-   Paciente pac(estado, genero, documento, fechaNac,
-               fechaOperacion, nombre, apellido, id, mail,
-               diagnostico, patologia, HC, profesional);
-  _archivo.guardar(pac);
-  return;
-  }
-  cls();
-  cout << "hubo un error en las fechas, por favor vuelva a ingresarlas" << endl;
-  }while (true);
+        Paciente pac(estado, genero, documento, fechaNac, /* Remove fechaOperacion, */
+                     nombre, apellido, id, mail, diagnostico, patologia, HC, profesional);
+        _archivo.guardar(pac);
+        return;
+    }
+    cls();
+    cout << "Hubo un error en las fechas, por favor vuelva a ingresarlas" << endl;
+    } while (true);
 }
 
-}
 
 //void PacienteManager::Listar(Paciente paciente){
 //	if(paciente.getEstado() == true){

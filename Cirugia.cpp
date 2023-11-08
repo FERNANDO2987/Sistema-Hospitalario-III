@@ -22,7 +22,10 @@ using namespace std;
 Cirugia::Cirugia(){
 }
 
-Cirugia::Cirugia(bool estado, int id, std::string obs, std::string anti, bool alergia, std::string implan, std::string diagnostico, std::string tipo, std::string procedimiento,int estadoDeCirugias){
+Fecha::Fecha(){
+}
+
+Cirugia::Cirugia(bool estado, int id, std::string obs, std::string anti, bool alergia, std::string implan, std::string diagnostico, std::string tipo, std::string procedimiento,int estadoDeCirugias,Fecha fechaOperacion){
 _estado = estado;
 strcpy(_observacion, obs.c_str());
 strcpy(_antibioticos, anti.c_str());
@@ -33,6 +36,7 @@ strcpy(_tipoDeCirugia, tipo.c_str());
 strcpy(_procedimientos, procedimiento.c_str());
 _id = id;
 _estadosDeCirugias = estadoDeCirugias;
+_fechaOperacion = fechaOperacion;
 			}
 ///================================FIN==========================================
 
@@ -66,6 +70,10 @@ strcpy(_procedimientos,procedimientos.c_str());
 }
 void Cirugia::setEstadoCirugias(int estadoCirugia){
 _estadosDeCirugias = estadoCirugia;
+}
+
+void Cirugia::setFechaOperacion(Fecha fechaOperacion) {
+	_fechaOperacion = fechaOperacion;
 }
 ///================================FIN==========================================
 
@@ -106,5 +114,9 @@ return aux;
 }
 int Cirugia::getEstadoCirugias(){
 return _estadosDeCirugias;
+}
+
+Fecha Cirugia::getFechaOperacion() {
+	return _fechaOperacion;
 }
 ///================================FIN==========================================

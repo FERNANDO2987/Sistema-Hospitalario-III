@@ -16,6 +16,7 @@
 #ifndef CIRUGIA_H
 #define CIRUGIA_H
 #include <string>
+#include "Fecha.h"
 
 
 class Cirugia
@@ -31,6 +32,7 @@ private:
     char _tipoDeCirugia[100];
     char _procedimientos[100];
     int _estadosDeCirugias;
+    Fecha _fechaOperacion;
 
 
 public:
@@ -38,7 +40,7 @@ public:
     Cirugia();
 
     Cirugia(bool estado, int id, std::string observacion, std::string antibioticos, bool alergia, std::string implantes,
-        std::string diagnostico, std::string tipoDeCirugia, std::string procedimiento, int estadoDeCirugias);
+        std::string diagnostico, std::string tipoDeCirugia, std::string procedimiento, int estadoDeCirugias,Fecha fechaOperacion);
 
 
    //set
@@ -52,6 +54,7 @@ public:
     void setTipoDeCirugia (std::string tipoDeCirugia);
     void setProcedimientos (std::string procedimientos);
     void setEstadoCirugias(int estadoCirugia);
+    void setFechaOperacion(Fecha fechaOperacion);
 
 
 
@@ -66,6 +69,7 @@ public:
     std::string getTipoDeCirugia();
     std::string getProcedimientos();
     int getEstadoCirugias();
+    Fecha getFechaOperacion();
 
 };
 

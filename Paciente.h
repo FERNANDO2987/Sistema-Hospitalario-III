@@ -26,7 +26,7 @@ private:
 	char _genero[10];
 	int _documento;
 	Fecha _fechaNac;
-	Fecha _fechaOperacion;
+	//Fecha _fechaOperacion;
 	char _nombre[50];
 	char _apellido[30];
 	int _id;
@@ -40,14 +40,14 @@ private:
 public:
 	Paciente();
 	Paciente(bool estado, std::string genero, int documento, Fecha fechaNac,
-		     Fecha fechaOperacion, std::string nombre, std::string apellido, int id,std::string mail,
+		      std::string nombre, std::string apellido, int id,std::string mail,
 		     std::string diagnostico,std::string patologia,int HC, std::string profesionalAsig);
 
 	void setEstado(bool estado);
 	void setGenero(string genero);
 	void setDocumento (int Dni);
 	void setFechaNacimiento(Fecha fechaNac);
-	void setFechaOperacion(Fecha fechaOperacion);
+	//void setFechaOperacion(Fecha fechaOperacion);
 	void setNombre(string nombre);
 	void setApellido(string apellido);
 	void setID(int id);
@@ -61,7 +61,7 @@ public:
 	std::string getGenero();
 	int getDocumento();
 	Fecha getFechaNacimiento();
-	Fecha getFechaOperacion();
+	//Fecha getFechaOperacion();
 	std::string getNombre();
 	std::string getApellido();
 	int getID();

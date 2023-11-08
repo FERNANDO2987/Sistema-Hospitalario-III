@@ -107,13 +107,10 @@ bool CirugiaManager::validarID(Paciente &reg, int &id)
 ///
 /// DEVUELVE :
 ///-----------------------------------------------------------------------------
-void CirugiaManager::Cargar()
-{
-    ArchivoPaciente archivoPac ("archivoPaciente.dat");
-    Paciente paci;
+void CirugiaManager::Cargar() {
+    ArchivoPaciente archivoPac("archivoPaciente.dat");
     Paciente reg2;
     Cirugia reg1;
-    bool estado;
     int id;
     string observacion;
     string antibioticos;
@@ -123,56 +120,63 @@ void CirugiaManager::Cargar()
     string tipoDeCirugia;
     string procedimientos;
     int estadoCirugia;
-//no esta hecho algo asi como reg2 = archivopac
-    cout << "Ingrese ID:";
-    //cin>>id;
+    Fecha fechaOperacion;
+
+    cout << "Ingrese ID: ";
     id = obtenerEnteroValidado("");
-    if(validarID(reg2, reg1, id) == true)
-    {
-        cout << "EL ID YA TIENE UNA CIRUGIA PENDIENTE";
+
+    if (validarID(reg2, reg1, id)) {
+        cout << "El ID ya tiene una cirugia pendiente." << endl;
+    } else if (!validarID(reg2, id)) {
+        cout << "El paciente no existe." << endl;
+    } else {
+        cout << "Observaciones: ";
+        getline(cin, observacion);
+        // Add validation for observacion if needed
+
+        cout << "Antibioticos: ";
+        getline(cin, antibioticos);
+        // Add validation for antibioticos if needed
+
+        cout << "Alergico: 1 = SI / 0 = NO ";
+        cin >> alergia;
+        cin.ignore();
+        // Add validation for alergia (e.g., ensure it's 0 or 1)
+
+        cout << "Implantes: ";
+        getline(cin, implantes);
+        // Add validation for implantes if needed
+
+        cout << "Diagnostico: ";
+        getline(cin, diagnostico);
+        // Add validation for diagnostico if needed
+
+        cout << "Tipo de cirugia: ";
+        getline(cin, tipoDeCirugia);
+        // Add validation for tipoDeCirugia if needed
+
+        cout << "Procedimiento: ";
+        getline(cin, procedimientos);
+        // Add validation for procedimientos if needed
+
+      cout << "Fecha de Operacion (dd mm aaaa): ";
+    fechaOperacion.Cargar(); // Assuming the user inputs the date
+
+    Fecha fechaLimite(01, 1, 2023); // January 1st, 2023
+
+    if (fechaOperacion == fechaLimite) {
+        cout << "La fecha de operacion no puede ser en o antes de 2023. Por favor, ingrese una fecha válida." << endl;
+    } else {
+        estadoCirugia = 1;
+
+        Cirugia reg(true, id, observacion, antibioticos, alergia, implantes, diagnostico, tipoDeCirugia, procedimientos, estadoCirugia, fechaOperacion);
+        _archivo.guardar(reg);
     }
-    else
-    { if (validarID(reg2,id)== false){
-        cout << "el paciente no existe";
-    }else{
 
-       // for (int i=0;i<archivoPac.getCantidadRegistros();i++){
-         //   paci = archivoPac.leerRegistro(i);
-           // if (id == paci.getID()){
-               // cin.ignore();
-                cout << "Observaciones: ";
-                getline(cin,observacion);
-                cout << "Antibioticos: ";
-                getline(cin,antibioticos);
-                cout << "Alergico: 1 = SI / 0 = NO ";
-                cin>>alergia;
-                cin.ignore();
-                cout << "Implantes: ";
-                getline(cin,implantes);
-                cout << "Diagnostico: ";
-                getline(cin,diagnostico);
-                cout << "Tipo de cirugia: ";
-                getline(cin,tipoDeCirugia);
-                cout << "Procedimiento: ";
-                getline(cin,procedimientos);
-
-                estado = true;
-                //cout << "Estado de cirugia: ";
-                estadoCirugia = 1;
-
-Cirugia reg( estado, id,observacion,antibioticos, alergia, implantes, diagnostico, tipoDeCirugia, procedimientos, estadoCirugia);
-
-    _archivo.guardar(reg);
-
-            //}
-            //else{
-             //   cout << "no hay paciente con ese ID, no se pudo crear la cirugia";
-               // return;
-            //}
-        }
-    }
     cin.ignore();
 }
+
+
 ///================================FIN==========================================
 
 ///=============================================================================

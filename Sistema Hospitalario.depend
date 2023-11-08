@@ -3062,3 +3062,197 @@
 	"TipoDocumento.h"
 	<string>
 
+1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1699400532 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\cirugia.h
+	<string>
+	"Fecha.h"
+
+1699405142 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\fecha.h
+	<iostream>
+	<cstring>
+
+1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1699400259 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+	"TipoDocumento.h"
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\tiempo.h
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\tipodocumento.h
+	<iostream>
+	<string>
+
+1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\profesional.h
+	<string>
+
+1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\estadocolor.cpp
+	"EstadoColor.h"
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\estadocolor.h
+
+1699404671 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+	<sstream>
+	<cctype>
+
+1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1699239414 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\menu.h
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"ArchivoCirugia.h"
+	"Paciente.h"
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\cirugiamanager.h
+	"Cirugia.h"
+	"Paciente.h"
+	"ArchivoCirugia.h"
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\matricula.cpp
+	<iostream>
+	<string>
+	"Matricula.h"
+
+1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\matricula.h
+
+1699239414 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<time.h>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"QuirofanoManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1699403311 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1699403271 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+
+1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\profesionalmanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<iomanip>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\quirofanomanager.cpp
+	<iostream>
+	<string>
+	<cctype>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+
+1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\tipodocumento.cpp
+	"TipoDocumento.h"
+	<string>
+

@@ -27,14 +27,14 @@ Fecha::Fecha(){
 }
 
 Paciente::Paciente(bool estado,string genero, int documento, Fecha fechaNac,
-	Fecha fechaOperacion, string nombre,string apellido, int id, string mail,
+	 string nombre,string apellido, int id, string mail,
 	string diagnostico, string patologia, int HC, string profesionalAsig)
 {
 	_estado = estado;
 	strcpy(_genero, genero.c_str());
 	_documento = documento;
 	_fechaNac = fechaNac;
-	_fechaOperacion = fechaOperacion;
+	//_fechaOperacion = fechaOperacion;
 	strcpy(_nombre, nombre.c_str());
 	strcpy(_apellido, apellido.c_str());
 	_id = id;
@@ -67,9 +67,7 @@ void Paciente::setFechaNacimiento(Fecha fechaNac) {
 	_fechaNac = fechaNac;
 }
 
-void Paciente::setFechaOperacion(Fecha fechaOperacion) {
-	_fechaOperacion = fechaOperacion;
-}
+
 
 void Paciente::setNombre(std::string nombre) {
 	strcpy(_nombre, nombre.c_str());
@@ -122,9 +120,7 @@ Fecha Paciente::getFechaNacimiento() {
 	return _fechaNac;
 }
 
-Fecha Paciente::getFechaOperacion() {
-	return _fechaOperacion;
-}
+
 
 string Paciente::getNombre() {
 	string aux = _nombre;

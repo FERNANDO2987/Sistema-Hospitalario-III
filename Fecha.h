@@ -40,6 +40,13 @@ class Fecha{
       void Cargar();
       void CargaFechaOperacion();
       void Mostrar();
+
+
+
+
+
 };
+
+//bool operator <=(const Fecha& fecha2)const;
 
 #endif // FECHA_H
