@@ -37,6 +37,11 @@ int Fecha::getMes(){
 int Fecha::getAnio(){
    return _anio;
 }
+
+
+
+
+
 bool Fecha::esFechaValida(int dia, int mes, int anio) {
   // Verificar el rango del año (asumimos años entre 1900 y 2100)
   if (anio < 1900 || anio > 2100) {
@@ -212,4 +217,16 @@ void Fecha::Mostrar(){
 ///================================FIN==========================================
 
 
+bool Fecha::operator<=(const Fecha& otraFecha) const {
+    if (_anio < otraFecha.getAnio()) {
+        return true;
+    } else if (_anio == otraFecha.getAnio()) {
+        if (_mes < otraFecha.getMes()) {
+            return true;
+        } else if (_mes == otraFecha.getMes()) {
+            return _dia <= otraFecha.getDia();
+        }
+    }
+    return false;
+}
 

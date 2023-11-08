@@ -164,8 +164,10 @@ void CirugiaManager::Cargar() {
 
     Fecha fechaLimite(01, 1, 2023); // January 1st, 2023
 
-    if (fechaOperacion == fechaLimite) {
-        cout << "La fecha de operacion no puede ser en o antes de 2023. Por favor, ingrese una fecha válida." << endl;
+  Fecha fechaLimite(1, 1, 2023); // 1 de enero de 2023
+
+    if (fechaOperacion <= fechaLimite) {
+        cout << "La fecha de operación no puede ser en o antes de 2023. Por favor, ingrese una fecha válida." << endl;
     } else {
         estadoCirugia = 1;
 

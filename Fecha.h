@@ -43,10 +43,9 @@ class Fecha{
 
 
 
-
+ bool operator<=(const Fecha& otraFecha) const; // Declaración del operador <=
 
 };
 
-//bool operator <=(const Fecha& fecha2)const;
 
 #endif // FECHA_H
