@@ -16,14 +16,12 @@
 #include <string>
 #include <cstring>
 #include "Paciente.h"
-
+#include "Fecha.h"
 using namespace std;
 
 //Constructor Vacio
 Paciente::Paciente(){
 
-}
-Fecha::Fecha(){
 }
 
 Paciente::Paciente(bool estado,string genero, int documento, Fecha fechaNac,

@@ -43,7 +43,18 @@ class Fecha{
 
 
 
- bool operator<=(const Fecha& otraFecha) const; // Declaración del operador <=
+   bool operator<=(const Fecha& otraFecha) const {
+        if (_anio < otraFecha._anio) {
+            return true;
+        } else if (_anio == otraFecha._anio) {
+            if (_mes < otraFecha._mes) {
+                return true;
+            } else if (_mes == otraFecha._mes) {
+                return _dia <= otraFecha._dia;
+            }
+        }
+        return false;
+    }
 
 };
 

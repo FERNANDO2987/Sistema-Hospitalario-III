@@ -90,7 +90,9 @@ int obtenerEnteroValidado(const string& mensaje) {
   return stoi(input);
 }
 
-PacienteManager::Cargar(){
+
+
+void PacienteManager::Cargar(){
 	Paciente reg;
  bool estado;
   string genero;
@@ -131,9 +133,9 @@ PacienteManager::Cargar(){
   do{
   cout << "Fecha de nacimiento (dd mm aaaa): ";
   fechaNac.Cargar();
-  cout << "Fecha Operacion (dd mm aaaa): ";
-  fechaOperacion.CargaFechaOperacion();
-  if (fechaNac.toString("YYYY/MM/DD") <= fechaOperacion.toString("YYYY/MM/DD")){
+//  cout << "Fecha Operacion (dd mm aaaa): ";
+//  fechaOperacion.CargaFechaOperacion();
+  if (fechaNac.getAnio()==2023){
     cout << "Documento: ";
   documento = obtenerEnteroValidado("");
 
@@ -165,7 +167,7 @@ do{
 
 
    Paciente pac(estado, genero, documento, fechaNac,
-               fechaOperacion, nombre, apellido, id, mail,
+                nombre, apellido, id, mail,
                diagnostico, patologia, HC, profesional);
   _archivo.guardar(pac);
   return;
@@ -176,9 +178,6 @@ do{
 }
 
 }
-
-
-
 
 
 
@@ -533,7 +532,7 @@ if(paciente.getEstado() == true){
 cout << "ID: " << paciente.getID() << endl;
 cout << "Nombre: "<< paciente.getNombre()<< endl;
 cout << "Apellido: "<< paciente.getApellido()<<endl;
-cout << "Fecha de Operacion : "<<paciente.getFechaOperacion().toString()<<endl;
+//cout << "Fecha de Operacion : "<<paciente.getFechaOperacion().toString()<<endl;
 cout << "Historial clinico: "<< paciente.getHistorialClinico()<<endl;
 cout << "Profesional asignado: "<< paciente.getProfesionalAsignado()<<endl;
 	}

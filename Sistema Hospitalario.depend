@@ -3074,7 +3074,7 @@
 	<string>
 	"Fecha.h"
 
-1699405792 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\fecha.h
+1699409029 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\fecha.h
 	<iostream>
 	<cstring>
 
@@ -3129,7 +3129,7 @@
 
 1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\estadocolor.h
 
-1699404671 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\fecha.cpp
+1699409029 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\fecha.cpp
 	<iostream>
 	"Fecha.h"
 	<string>
@@ -3214,10 +3214,11 @@
 	<string>
 	"Cirugia.h"
 
-1699403271 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\paciente.cpp
+1699409753 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\paciente.cpp
 	<string>
 	<cstring>
 	"Paciente.h"
+	"Fecha.h"
 
 1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\profesional.cpp
 	<iostream>
@@ -3255,4 +3256,27 @@
 1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\tipodocumento.cpp
 	"TipoDocumento.h"
 	<string>
+
+1699409193 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1699409663 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<cstdlib>
+	<ctime>
+	<unordered_set>
+	"Cirugia.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"ProfesionalManager.h"
+	<iomanip>
+	"rlutil.h"
 

@@ -217,16 +217,15 @@ void Fecha::Mostrar(){
 ///================================FIN==========================================
 
 
-bool Fecha::operator<=(const Fecha& otraFecha) const {
-    if (_anio < otraFecha.getAnio()) {
-        return true;
-    } else if (_anio == otraFecha.getAnio()) {
-        if (_mes < otraFecha.getMes()) {
-            return true;
-        } else if (_mes == otraFecha.getMes()) {
-            return _dia <= otraFecha.getDia();
-        }
-    }
-    return false;
-}
-
+// bool operator<=(const Fecha& otraFecha) const {
+//        if (_anio < otraFecha.getAnio()) {
+//            return true;
+//        } else if (_anio == otraFecha.getAnio()) {
+//            if (_mes < otraFecha.getMes()) {
+//                return true;
+//            } else if (_mes == otraFecha.getMes()) {
+//                return _dia <= otraFecha.getDia();
+//            }
+//        }
+//        return false;
+//    }

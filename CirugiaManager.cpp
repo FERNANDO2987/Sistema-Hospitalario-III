@@ -164,8 +164,6 @@ void CirugiaManager::Cargar() {
 
     Fecha fechaLimite(01, 1, 2023); // January 1st, 2023
 
-  Fecha fechaLimite(1, 1, 2023); // 1 de enero de 2023
-
     if (fechaOperacion <= fechaLimite) {
         cout << "La fecha de operación no puede ser en o antes de 2023. Por favor, ingrese una fecha válida." << endl;
     } else {
@@ -178,6 +176,7 @@ void CirugiaManager::Cargar() {
     cin.ignore();
 }
 
+}
 
 ///================================FIN==========================================
 
@@ -542,7 +541,7 @@ void CirugiaManager::obtenerProcedimientosXFecha(){
 		for(int j = 0; j<cantRegC; j++){
 
 			cirugia = archivoC.leerRegistro(j);
-			if(paciente.getFechaOperacion().getAnio()>= anioDeInicio && paciente.getFechaOperacion().getAnio()<= anioDeFin){
+			if(cirugia.getFechaOperacion().getAnio()>= anioDeInicio && cirugia.getFechaOperacion().getAnio()<= anioDeFin){
 				if(paciente.getID() == cirugia.getID() && paciente.getEstado()==true && cirugia.getEstado()== true){
 
 					reg.Listar(cirugia);
