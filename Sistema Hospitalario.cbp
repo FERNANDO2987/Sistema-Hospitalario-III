@@ -50,7 +50,6 @@
 		<Unit filename="EstadoColor.h" />
 		<Unit filename="Fecha.cpp" />
 		<Unit filename="Fecha.h" />
-		<Unit filename="Matricula.cpp" />
 		<Unit filename="Matricula.h" />
 		<Unit filename="Menu.cpp" />
 		<Unit filename="Menu.h" />
@@ -68,8 +67,6 @@
 		<Unit filename="QuirofanoManager.h" />
 		<Unit filename="Tiempo.cpp" />
 		<Unit filename="Tiempo.h" />
-		<Unit filename="TipoDocumento.cpp" />
-		<Unit filename="TipoDocumento.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

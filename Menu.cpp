@@ -79,8 +79,6 @@ void Menu::Presentacion()
   gotoxy(10, 26);
  cout<<"         RAMIREZ MATIAS HERNAN. "<<endl;
   gotoxy(10, 27);
- cout<<"         ROMERO NAHUEL FRANCO. "<<endl;
-  gotoxy(10, 28);
  cout<<"         PALACIOS FERNANDO GUILLERMO. "<<endl;
 
 }
