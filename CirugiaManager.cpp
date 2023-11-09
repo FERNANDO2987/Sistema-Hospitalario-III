@@ -232,6 +232,7 @@ void CirugiaManager::Listar(Cirugia cirugia)
         cout << "Tipo de cirgugia: " << cirugia.getTipoDeCirugia() << endl;
         cout << "Procedimiento: " << cirugia.getProcedimientos() << endl;
         cout << "Estado de cirugia: "<< cirugia.getEstadoCirugias() << endl;
+        cout << "Fecha de Operacion : "<<cirugia.getFechaOperacion().toString()<<endl;
         cout<<"---------------------------------------------------------------------"<<endl;
     }
 

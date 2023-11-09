@@ -107,7 +107,7 @@ void PacienteManager::Cargar(){
   int d, m, a;
   string profesional;
   Fecha fechaNac;
-  Fecha fechaAlta;
+  Fecha fechaHasta;
   //Fecha fechaOperacion;
   ProfesionalManager profManager;
   int IDProfesional;
@@ -133,9 +133,10 @@ void PacienteManager::Cargar(){
   do{
   cout << "Fecha de nacimiento (dd mm aaaa): ";
   fechaNac.Cargar();
-//  cout << "Fecha Operacion (dd mm aaaa): ";
-//  fechaOperacion.CargaFechaOperacion();
-  if (fechaNac.getAnio()==2023){
+ // cout << "Fecha Operacion (dd mm aaaa): ";
+  fechaHasta.CargaFechaOperacion();
+
+  if (fechaNac.toString("YYYY/MM/DD") <= fechaHasta.toString("2023/11/09")){
     cout << "Documento: ";
   documento = obtenerEnteroValidado("");
 
@@ -180,81 +181,79 @@ do{
 }
 
 
-
-//void PacienteManager::Listar(Paciente paciente){
-//	if(paciente.getEstado() == true){
-//cout<<"             PACIENTE"<<endl;
-//cout<<endl;
-//cout << "ID: " << paciente.getID() << endl;
-//cout << "Nombre: "<< paciente.getNombre()<< endl;
-//cout << "Apellido: "<< paciente.getApellido()<<endl;
-//cout << "Fecha Nacimiento: "<< paciente.getFechaNacimiento().toString()<<endl;
-//cout << "Fecha de Operacion : "<<paciente.getFechaOperacion().toString()<<endl;
-//cout << "Documento: "<<paciente.getDocumento()<<endl;
-//cout << "Genero: "<<paciente.getGenero()<<endl;
-//cout << "Email: "<< paciente.getEmail()<<endl;
-//cout << "Diagnostico: "<<paciente.getDiagnostico()<<endl;
-//cout << "Historial clinico: "<< paciente.getHistorialClinico()<<endl;
-//cout << "Profesional asignado: "<< paciente.getProfesionalAsignado()<<endl;
-//cout<<"--------------------------------------------------"<<endl;
-//	}
-//}
-
-
-//void PacienteManager::ListarTodos(){
-//ArchivoPaciente archivoP ("archivoPaciente.dat");
-//
-//int cantidadRegistros = _archivo.getCantidadRegistros();
-//
-//  for (int i = 0; i<cantidadRegistros; i++)
-//  {
-//    Paciente reg = _archivo.leerRegistro(i);
-//	if(reg.getEstado()==true){
-//
-//      Listar(reg);
-//	}
-//      cout << endl;
-//  }
-//}
-
-
-
-
-
-void PacienteManager::Listar(Paciente paciente) {
-    if (paciente.getEstado() == true) {
-        //std::cout << std::left << std::setw(10) << "ID";
-        cout<<endl;
-         cout << "ID: ";
- cout<<paciente.getID();
-        std::cout << std::left << std::setw(20) << "NOMBRE";
-        std::cout << std::left << std::setw(20) << "APELLIDO\n";
-
-        // Definir la longitud del campo deseado
-int desplazamiento = -10; // Podría ser cualquier valor negativo o positivo
-
-// Imprimir los espacios necesarios antes del campo para desplazarlo hacia la izquierda
-
-
-        std::cout << std::left << std::setw(10) << paciente.getNombre();
-        std::cout << std::left << std::setw(20) << paciente.getApellido() << std::endl;
-        // Ajusta los anchos y agrega más campos según sea necesario
-    }
+void PacienteManager::Listar(Paciente paciente){
+	if(paciente.getEstado() == true){
+cout<<"             PACIENTE"<<endl;
+cout<<endl;
+cout << "ID: " << paciente.getID() << endl;
+cout << "Nombre: "<< paciente.getNombre()<< endl;
+cout << "Apellido: "<< paciente.getApellido()<<endl;
+cout << "Fecha Nacimiento: "<< paciente.getFechaNacimiento().toString()<<endl;
+cout << "Documento: "<<paciente.getDocumento()<<endl;
+cout << "Genero: "<<paciente.getGenero()<<endl;
+cout << "Email: "<< paciente.getEmail()<<endl;
+cout << "Diagnostico: "<<paciente.getDiagnostico()<<endl;
+cout << "Historial clinico: "<< paciente.getHistorialClinico()<<endl;
+cout << "Profesional asignado: "<< paciente.getProfesionalAsignado()<<endl;
+cout<<"--------------------------------------------------"<<endl;
+	}
 }
 
-void PacienteManager::ListarTodos() {
-    ArchivoPaciente archivoP("archivoPaciente.dat");
 
-    int cantidadRegistros = _archivo.getCantidadRegistros();
+void PacienteManager::ListarTodos(){
+ArchivoPaciente archivoP ("archivoPaciente.dat");
 
-    for (int i = 0; i < cantidadRegistros; i++) {
-        Paciente reg = _archivo.leerRegistro(i);
-        if (reg.getEstado() == true) {
-            Listar(reg);
-            std::cout << std::endl;
-        }
-    }
+int cantidadRegistros = _archivo.getCantidadRegistros();
+
+  for (int i = 0; i<cantidadRegistros; i++)
+  {
+    Paciente reg = _archivo.leerRegistro(i);
+	if(reg.getEstado()==true){
+
+      Listar(reg);
+	}
+      cout << endl;
+  }
 }
+
+
+
+
+
+//void PacienteManager::Listar(Paciente paciente) {
+//    if (paciente.getEstado() == true) {
+//        //std::cout << std::left << std::setw(10) << "ID";
+//        cout<<endl;
+//         cout << "ID: ";
+// cout<<paciente.getID();
+//        std::cout << std::left << std::setw(20) << "NOMBRE";
+//        std::cout << std::left << std::setw(20) << "APELLIDO\n";
+//
+//        // Definir la longitud del campo deseado
+//int desplazamiento = -10; // Podría ser cualquier valor negativo o positivo
+//
+//// Imprimir los espacios necesarios antes del campo para desplazarlo hacia la izquierda
+//
+//
+//        std::cout << std::left << std::setw(10) << paciente.getNombre();
+//        std::cout << std::left << std::setw(20) << paciente.getApellido() << std::endl;
+//        // Ajusta los anchos y agrega más campos según sea necesario
+//    }
+//}
+
+//void PacienteManager::ListarTodos() {
+//    ArchivoPaciente archivoP("archivoPaciente.dat");
+//
+//    int cantidadRegistros = _archivo.getCantidadRegistros();
+//
+//    for (int i = 0; i < cantidadRegistros; i++) {
+//        Paciente reg = _archivo.leerRegistro(i);
+//        if (reg.getEstado() == true) {
+//            Listar(reg);
+//            std::cout << std::endl;
+//        }
+//    }
+//}
 
 
 
