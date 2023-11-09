@@ -19,37 +19,50 @@
 using namespace std;
 #include <cstring>
 
-class Fecha{
- private:
-   int _dia, _mes, _anio;
+class Fecha
+{
+private:
+    int _dia, _mes, _anio;
 
 
-   public:
+public:
 
-      Fecha();
-      Fecha(int dia, int mes, int anio);
+    Fecha();
+    Fecha(int dia, int mes, int anio);
 
-      int getDia();
-      int getMes();
-      int getAnio();
-      bool esEnteroValido(const string& input);
-      int obtenerEnteroValidado(const string& mensaje);
-      bool esFechaValida(int dia, int mes, int anio);
-      void agregarDias(int cantidadDias);
-      string toString(string formatoFecha = "DD/MM/YYYY");
-      void Cargar();
-      void CargaFechaOperacion();
-      void Mostrar();
+    int getDia();
+    int getMes();
+    int getAnio();
+    bool esEnteroValido(const string& input);
+    int obtenerEnteroValidado(const string& mensaje);
+    bool esFechaValida(int dia, int mes, int anio);
+    void agregarDias(int cantidadDias);
+    string toString(string formatoFecha = "DD/MM/YYYY");
+    void Cargar();
+    void CargaFechaOperacion();
+    void Mostrar();
+
+
+    void setDia(int d);
+    void setMes(int m);
+    void setAnio(int a);
 
 
 
-   bool operator<=(const Fecha& otraFecha) const {
-        if (_anio < otraFecha._anio) {
+    bool operator<=(const Fecha& otraFecha) const
+    {
+        if (_anio < otraFecha._anio)
+        {
             return true;
-        } else if (_anio == otraFecha._anio) {
-            if (_mes < otraFecha._mes) {
+        }
+        else if (_anio == otraFecha._anio)
+        {
+            if (_mes < otraFecha._mes)
+            {
                 return true;
-            } else if (_mes == otraFecha._mes) {
+            }
+            else if (_mes == otraFecha._mes)
+            {
                 return _dia <= otraFecha._dia;
             }
         }

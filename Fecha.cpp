@@ -39,6 +39,19 @@ int Fecha::getAnio(){
 }
 
 
+ void Fecha::setDia(int d)
+    {
+        _dia = d;
+    }
+    void Fecha::setMes(int m)
+    {
+        _mes = m;
+    }
+    void Fecha::setAnio(int a)
+    {
+        _anio = a;
+    }
+
 
 
 

@@ -91,11 +91,11 @@ bool CirugiaManager::validarID(Paciente &reg, int &id)
     for(int i  =0 ; i<cant; i++)
     {
         reg=archivoP.leerRegistro(i);
-            if(id == reg.getID())
-            {
-                return true;
+        if(id == reg.getID())
+        {
+            return true;
 
-            }
+        }
     }
 
     return false;
@@ -107,7 +107,8 @@ bool CirugiaManager::validarID(Paciente &reg, int &id)
 ///
 /// DEVUELVE :
 ///-----------------------------------------------------------------------------
-void CirugiaManager::Cargar() {
+void CirugiaManager::Cargar()
+{
     ArchivoPaciente archivoPac("archivoPaciente.dat");
     Paciente reg2;
     Cirugia reg1;
@@ -121,60 +122,91 @@ void CirugiaManager::Cargar() {
     string procedimientos;
     int estadoCirugia;
     Fecha fechaOperacion;
+    Fecha fechalimite;
+    bool salir=false;
 
-    cout << "Ingrese ID: ";
-    id = obtenerEnteroValidado("");
+    cls();
+    do
+    {
 
-    if (validarID(reg2, reg1, id)) {
-        cout << "El ID ya tiene una cirugia pendiente." << endl;
-    } else if (!validarID(reg2, id)) {
-        cout << "El paciente no existe." << endl;
-    } else {
-        cout << "Observaciones: ";
-        getline(cin, observacion);
-        // Add validation for observacion if needed
+        cout << "Ingrese ID: ";
+        id = obtenerEnteroValidado("");
 
-        cout << "Antibioticos: ";
-        getline(cin, antibioticos);
-        // Add validation for antibioticos if needed
+        if (validarID(reg2, reg1, id))
+        {
+            cout << "El ID ya tiene una cirugia pendiente." << endl;
+            salir=true;
+        }
+        else if (!validarID(reg2, id))
+        {
+            cout << "El paciente no existe." << endl;
+            salir=true;
+        }
+        else
+        {
+            cout << "Observaciones: ";
+            getline(cin, observacion);
+            // Add validation for observacion if needed
 
-        cout << "Alergico: 1 = SI / 0 = NO ";
-        cin >> alergia;
-        cin.ignore();
-        // Add validation for alergia (e.g., ensure it's 0 or 1)
+            cout << "Antibioticos: ";
+            getline(cin, antibioticos);
+            // Add validation for antibioticos if needed
 
-        cout << "Implantes: ";
-        getline(cin, implantes);
-        // Add validation for implantes if needed
+            cout << "Alergico: 1 = SI / 0 = NO ";
+            cin >> alergia;
+            cin.ignore();
+            // Add validation for alergia (e.g., ensure it's 0 or 1)
 
-        cout << "Diagnostico: ";
-        getline(cin, diagnostico);
-        // Add validation for diagnostico if needed
+            cout << "Implantes: ";
+            getline(cin, implantes);
+            // Add validation for implantes if needed
 
-        cout << "Tipo de cirugia: ";
-        getline(cin, tipoDeCirugia);
-        // Add validation for tipoDeCirugia if needed
+            cout << "Diagnostico: ";
+            getline(cin, diagnostico);
+            // Add validation for diagnostico if needed
 
-        cout << "Procedimiento: ";
-        getline(cin, procedimientos);
-        // Add validation for procedimientos if needed
+            cout << "Tipo de cirugia: ";
+            getline(cin, tipoDeCirugia);
+            // Add validation for tipoDeCirugia if needed
 
-      cout << "Fecha de Operacion (dd mm aaaa): ";
-    fechaOperacion.Cargar(); // Assuming the user inputs the date
+            cout << "Procedimiento: ";
+            getline(cin, procedimientos);
+            // Add validation for procedimientos if needed
 
-    Fecha fechaLimite(01, 1, 2023); // January 1st, 2023
 
-    if (fechaOperacion <= fechaLimite) {
-        cout << "La fecha de operación no puede ser en o antes de 2023. Por favor, ingrese una fecha válida." << endl;
-    } else {
-        estadoCirugia = 1;
 
-        Cirugia reg(true, id, observacion, antibioticos, alergia, implantes, diagnostico, tipoDeCirugia, procedimientos, estadoCirugia, fechaOperacion);
-        _archivo.guardar(reg);
+            cout << "Fecha de Operacion/visita (dd mm aaaa): ";
+            fechaOperacion.Cargar(); // Assuming the user inputs the date
+            fechalimite.setAnio(2023);
+            fechalimite.setMes(11);
+            fechalimite.setDia(7);
+
+
+            if (fechaOperacion.toString("YYYY/MM/DD") <= fechalimite.toString("YYYY/MM/DD"))
+            {
+                cout << "La fecha de operación/visita no puede ser antes de Noviembre del 2023. Por favor, ingrese una fecha válida." << endl;
+            }
+            else
+            {
+                estadoCirugia = 1;
+
+                Cirugia reg(estadoCirugia, id, observacion, antibioticos, alergia, implantes, diagnostico, tipoDeCirugia, procedimientos, estadoCirugia, fechaOperacion);
+                if(_archivo.guardar(reg)==true)
+                {
+                    salir=true;
+                }
+
+            }
+
+            cin.ignore();
+        }
+
+
+
     }
+    while(!salir);
 
-    cin.ignore();
-}
+
 
 }
 
@@ -370,8 +402,8 @@ void CirugiaManager::mostrarCirugiaYPaciente()
             }
         }
     }
-cout << "NO HAY RESULTADOS EN LA BUSQUEDA.." <<endl;
-cin.ignore();
+    cout << "NO HAY RESULTADOS EN LA BUSQUEDA.." <<endl;
+    cin.ignore();
 }
 ///================================FIN==========================================
 
@@ -431,6 +463,19 @@ void CirugiaManager::modificarCursoDeCirugia()
     ArchivoCirugia archivo ("archivoCirugia.dat");
 
     int cantRegCirugia = archivo.getCantidadRegistros();
+    cout<<"ESTADOS DE CIRUGIAS"<<endl;
+    cout<<"----------------------"<<endl;
+    setColor(GREEN);
+    cout<<"1-Inicializacion de Cirugia"<<endl;
+    setColor(RED);
+    cout<<"2-Cirugia en Curso"<<endl;
+    setColor(YELLOW);
+    cout<<"3-Cirugia por Finalizar"<<endl;
+    setColor(BLUE);
+    cout<<"4-Cirugia Finalizar y Limpieza de Quirofano"<<endl;
+    setColor(WHITE);
+    cout << endl;
+
     int id;
     cout <<"Ingrese ID de paciente a buscar: ";
     id=obtenerEnteroValidado("");
@@ -448,13 +493,15 @@ void CirugiaManager::modificarCursoDeCirugia()
             reg.Listar(cirugia);
         }
     }
-    cout << endl;
+
     cout << "Nuevo Estado de cirugia: ";
     cin>>nuevoCurso;
 
     cout << "================="<<endl;
     cout << "DATOS MODIFICADOS"<<endl;
     cout << "================="<<endl;
+
+
 
     for(int i=0; i<cantRegCirugia; i++)
     {
@@ -469,7 +516,7 @@ void CirugiaManager::modificarCursoDeCirugia()
             reg.Listar(cirugia);
         }
     }
-cin.ignore();
+    cin.ignore();
 }
 ///================================FIN==========================================
 
@@ -497,64 +544,71 @@ void CirugiaManager::EliminarCirugia(Cirugia &aux)
         {
 
             aux.setEstado(false);
-           if(reg.Modificar(aux,i)){
-        cout << "La cirugia con el id #"<<id<< " se ha eliminado correctamente." <<endl;
+            if(reg.Modificar(aux,i))
+            {
+                cout << "La cirugia con el id #"<<id<< " se ha eliminado correctamente." <<endl;
 
-        return;
+                return;
 
-           }
+            }
         }
 
     }
 
-        cout << "NO SE PUEDE ELIMINAR CIRUGIA QUE YA ESTA EN PROCEDIMIENTO!."<<endl;
+    cout << "NO SE PUEDE ELIMINAR CIRUGIA QUE YA ESTA EN PROCEDIMIENTO!."<<endl;
 
-cin.ignore();
+    cin.ignore();
 }
 ///================================FIN==========================================
 
-void CirugiaManager::obtenerProcedimientosXFecha(){
-	Fecha fecha;
-	Fecha fechaF;
-	Cirugia cirugia;
-	CirugiaManager reg;
+void CirugiaManager::obtenerProcedimientosXFecha()
+{
+    Fecha fecha;
+    Fecha fechaF;
+    Cirugia cirugia;
+    CirugiaManager reg;
     ArchivoCirugia archivoC("archivoCirugia.dat");
 
     PacienteManager aux;
-	Paciente paciente;
-	ArchivoPaciente archivoP ("archivoPaciente.dat");
+    Paciente paciente;
+    ArchivoPaciente archivoP ("archivoPaciente.dat");
 
-	int cantRegP = archivoP.getCantidadRegistros();
-	int cantRegC = archivoC.getCantidadRegistros();
-	int anioDeInicio;
-	int anioDeFin;
-	cout << "INGRESE FECHA DE INICIO :";
-	cin>>anioDeInicio;
+    int cantRegP = archivoP.getCantidadRegistros();
+    int cantRegC = archivoC.getCantidadRegistros();
+    int anioDeInicio;
+    int anioDeFin;
+    cout << "INGRESE FECHA DE INICIO :";
+    cin>>anioDeInicio;
 
-	cout << "INGRESE FECHA DE FINALIZACION: ";
-	cin>>anioDeFin;
+    cout << "INGRESE FECHA DE FINALIZACION: ";
+    cin>>anioDeFin;
 
 
-	for(int i = 0; i<cantRegP; i++){
+    for(int i = 0; i<cantRegP; i++)
+    {
 
-		paciente = archivoP.leerRegistro(i);
+        paciente = archivoP.leerRegistro(i);
 
-		for(int j = 0; j<cantRegC; j++){
+        for(int j = 0; j<cantRegC; j++)
+        {
 
-			cirugia = archivoC.leerRegistro(j);
-			if(cirugia.getFechaOperacion().getAnio()>= anioDeInicio && cirugia.getFechaOperacion().getAnio()<= anioDeFin){
-				if(paciente.getID() == cirugia.getID() && paciente.getEstado()==true && cirugia.getEstado()== true){
+            cirugia = archivoC.leerRegistro(j);
+            if(cirugia.getFechaOperacion().getAnio()>= anioDeInicio && cirugia.getFechaOperacion().getAnio()<= anioDeFin)
+            {
+                if(paciente.getID() == cirugia.getID() && paciente.getEstado()==true && cirugia.getEstado()== true)
+                {
 
-					reg.Listar(cirugia);
-				}
-			}
+                    reg.Listar(cirugia);
+                }
+            }
 
-		}
-	}
-cin.ignore();
+        }
+    }
+    cin.ignore();
 }
 
-void CirugiaManager::promedioDeEtapas() {
+void CirugiaManager::promedioDeEtapas()
+{
     Cirugia cirugia;
     Paciente paciente;
 
@@ -567,19 +621,24 @@ void CirugiaManager::promedioDeEtapas() {
 
     int cantRegC = archivoC.getCantidadRegistros();
 
-    for (int i = 0; i < cantRegC; i++) {
+    for (int i = 0; i < cantRegC; i++)
+    {
         cirugia = archivoC.leerRegistro(i);
 
-        if (cirugia.getEstadoCirugias() == 1 && cirugia.getEstado()==true) {
+        if (cirugia.getEstadoCirugias() == 1 && cirugia.getEstado()==true)
+        {
             contadorEstado1++;
         }
-        else if (cirugia.getEstadoCirugias() == 2 && cirugia.getEstado() == true) {
+        else if (cirugia.getEstadoCirugias() == 2 && cirugia.getEstado() == true)
+        {
             contadorEstado2++;
         }
-        else if (cirugia.getEstadoCirugias() == 3 && cirugia.getEstado() == true) {
+        else if (cirugia.getEstadoCirugias() == 3 && cirugia.getEstado() == true)
+        {
             contadorEstado3++;
         }
-        else if (cirugia.getEstadoCirugias() == 4 && cirugia.getEstado() == true) {
+        else if (cirugia.getEstadoCirugias() == 4 && cirugia.getEstado() == true)
+        {
             contadorEstado4++;
         }
     }
@@ -591,23 +650,31 @@ void CirugiaManager::promedioDeEtapas() {
     float porcentajeEstado3 = (contadorEstado3 / totalRegistros) * 100;
     float porcentajeEstado4 = (contadorEstado4 / totalRegistros) * 100;
 
+    setColor(GREEN);
     cout << "PORCENTAJE ESTADO #1 (VERDE): " << porcentajeEstado1 << "%" << endl;
+    setColor(RED);
     cout << "PORCENTAJE ESTADO #2 (ROJO): " << porcentajeEstado2 << "%" << endl;
+    setColor(YELLOW);
     cout << "PORCENTAJE ESTADO #3 (AMARILLO): " << porcentajeEstado3 << "%" << endl;
+    setColor(BLUE);
     cout << "PORCENTAJE ESTADO #4 (AZUL): " << porcentajeEstado4 << "%" << endl;
+      setColor(WHITE);
 }
-Cirugia CirugiaManager::ObtenerCirugiaPorIdPaciente(int idPaciente) {
-	ArchivoCirugia archivo("archivoCirugia.dat");
-	int cantReg = archivo.getCantidadRegistros();
+Cirugia CirugiaManager::ObtenerCirugiaPorIdPaciente(int idPaciente)
+{
+    ArchivoCirugia archivo("archivoCirugia.dat");
+    int cantReg = archivo.getCantidadRegistros();
 
-	for (int i = 0; i < cantReg; i++) {
-		Cirugia aux = archivo.leerRegistro(i);
-		if (aux.getEstadoCirugias() == 1 && aux.getID() == idPaciente && aux.getEstado() == true) {
-			return aux;
-		}
-	}
+    for (int i = 0; i < cantReg; i++)
+    {
+        Cirugia aux = archivo.leerRegistro(i);
+        if (aux.getEstadoCirugias() == 1 && aux.getID() == idPaciente && aux.getEstado() == true)
+        {
+            return aux;
+        }
+    }
 
-	Cirugia cirugiaNoEncontrada;
-	cirugiaNoEncontrada.setID(-1);
-	return cirugiaNoEncontrada;
+    Cirugia cirugiaNoEncontrada;
+    cirugiaNoEncontrada.setID(-1);
+    return cirugiaNoEncontrada;
 }

@@ -134,9 +134,12 @@ void PacienteManager::Cargar(){
   cout << "Fecha de nacimiento (dd mm aaaa): ";
   fechaNac.Cargar();
  // cout << "Fecha Operacion (dd mm aaaa): ";
-  fechaHasta.CargaFechaOperacion();
+ // fechaHasta.CargaFechaOperacion();
+ fechaHasta.setAnio(2023);
+ fechaHasta.setMes(11);
+ fechaHasta.setDia(9);
 
-  if (fechaNac.toString("YYYY/MM/DD") <= fechaHasta.toString("2023/11/09")){
+  if (fechaNac.toString("YYYY/MM/DD") <= fechaHasta.toString("YYYY/MM/DD")){
     cout << "Documento: ";
   documento = obtenerEnteroValidado("");
 

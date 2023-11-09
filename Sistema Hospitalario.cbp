@@ -46,11 +46,8 @@
 		<Unit filename="Cirugia.h" />
 		<Unit filename="CirugiaManager.cpp" />
 		<Unit filename="CirugiaManager.h" />
-		<Unit filename="EstadoColor.cpp" />
-		<Unit filename="EstadoColor.h" />
 		<Unit filename="Fecha.cpp" />
 		<Unit filename="Fecha.h" />
-		<Unit filename="Matricula.h" />
 		<Unit filename="Menu.cpp" />
 		<Unit filename="Menu.h" />
 		<Unit filename="Paciente.cpp" />
