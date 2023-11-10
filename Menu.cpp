@@ -252,7 +252,7 @@ void Menu::MenuPaciente()
         showItem(" BUSCAR PACIENTE POR APELLIDO ",40, 13, y==2);
         showItem(" LISTAR TODOS LOS PACIENTES ",40, 14, y==3);
         showItem(" ELIMINAR PACIENTE POR ID ",40, 15, y==4);
-        showItem(" MODIFICAR MAIL ",40, 16, y==5);
+        showItem(" MODIFICAR PACIENTE ",40, 16, y==5);
         showItem(" CONFIGURACION ",40, 17, y==6);
         showItem(" VOLVER  ",40, 18, y==7);
 
@@ -336,7 +336,7 @@ void Menu::MenuPaciente()
                 break;
             case 5:
                 cls();
-                paciente.modificarMail();
+                paciente.modificarPaciente();
                cout << endl;
 				setColor(WHITE);
 				system("pause");
@@ -950,7 +950,7 @@ void Menu::MenuInformes()
                 break;
             case 5:
                 cls();
-                paciente.modificarMail();
+                paciente.modificarPaciente();
                cout << endl;
 				setColor(WHITE);
 				system("pause");

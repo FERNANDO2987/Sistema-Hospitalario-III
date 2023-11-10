@@ -47,7 +47,7 @@ public:
     void copiaDeSeguridadPaciente();
     void restaurarBkp();
     /// Mofificar mail
-    void modificarMail();
+    void modificarPaciente();
     ///Lista por apellido
     void BuscarPorApellido();
     void convertirAMayusculas(char* apellido);
