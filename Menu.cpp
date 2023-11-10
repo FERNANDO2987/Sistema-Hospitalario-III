@@ -336,6 +336,7 @@ void Menu::MenuPaciente()
                 break;
             case 5:
                 cls();
+                //Se agrega nuevo metodo
                 paciente.modificarPaciente();
                cout << endl;
 				setColor(WHITE);
