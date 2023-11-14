@@ -386,31 +386,31 @@ int CirugiaManager::generarID()
 ///
 /// DEVUELVE :
 ///-----------------------------------------------------------------------------
-void CirugiaManager::buscarCirugia()
+void CirugiaManager::buscarHC()
 {
-    CirugiaManager reg;
-    Cirugia cirugia;
+    PacienteManager reg;
+    Paciente paciente;
 
-    ArchivoCirugia archivo ("archivoCirugia.dat");
+    ArchivoPaciente archivo ("archivoPaciente.dat");
 
-    int cantRegCirugias = archivo.getCantidadRegistros();
-    int id;
-    cout <<"Ingrese ID de la cirugia a buscar: ";
-    id=obtenerEnteroValidado("");
+    int cantRegPacientes = archivo.getCantidadRegistros();
+    int hc;
+    cout <<"Ingrese la HC a buscar: ";
+    hc=obtenerEnteroValidado("");
     bool encontro = false;
-    for(int i = 0; i<cantRegCirugias; i++)
+    for(int i = 0; i<cantRegPacientes; i++)
     {
-        cirugia = archivo.leerRegistro(i);
+        paciente = archivo.leerRegistro(i);
 
-        if(cirugia.getID()==id && cirugia.getEstado()==true)
+        if(paciente.getHistorialClinico()==hc && paciente.getEstado()==true)
         {
-            reg.Listar(cirugia);
+            reg.Listar(paciente);
             encontro = true;
         }
     }
     if(encontro == false)
     {
-        cout << "NO SE ENCONTRO CIRUGIAS CON ESE #ID .. "<<endl;
+        cout << "NO SE ENCONTRO PACIENTES CON ESA #HC .. "<<endl;
     }
 
 }

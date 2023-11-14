@@ -3192,7 +3192,7 @@
 
 1699238167 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\matricula.h
 
-1699579744 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\menu.cpp
+1699925178 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\menu.cpp
 	<iostream>
 	<cstring>
 	<cstdio>
@@ -3256,7 +3256,7 @@
 	"TipoDocumento.h"
 	<string>
 
-1699919134 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\cirugiamanager.cpp
+1699924147 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\cirugiamanager.cpp
 	<iostream>
 	<string>
 	"CirugiaManager.h"

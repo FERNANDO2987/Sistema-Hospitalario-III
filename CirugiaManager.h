@@ -32,7 +32,7 @@ class CirugiaManager
 
 		bool validarID(Paciente &reg1, Cirugia &aux, int &id);
 		///BUSCA CIRUGIA POR ID
-		void buscarCirugia();
+		void buscarHC();
 		/// Muestra por pantalla Paciente y Cirugia
 		void mostrarCirugiaYPaciente();
 		/// muestra paciente
