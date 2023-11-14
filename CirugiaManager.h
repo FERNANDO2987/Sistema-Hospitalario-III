@@ -47,6 +47,7 @@ class CirugiaManager
 		Cirugia ObtenerCirugiaPorIdPaciente(int idPaciente);
 
 bool validarID(Paciente &reg, int &id);
+bool validarID(Cirugia &reg, int &id);
 	private:
 		ArchivoCirugia _archivo;
 		bool existeID(int id);

@@ -25,7 +25,7 @@ Cirugia::Cirugia(){
 Fecha::Fecha(){
 }
 
-Cirugia::Cirugia(bool estado, int id, std::string obs, std::string anti, bool alergia, std::string implan, std::string diagnostico, std::string tipo, std::string procedimiento,int estadoDeCirugias,Fecha fechaOperacion){
+Cirugia::Cirugia(bool estado, int id, std::string obs, std::string anti, bool alergia, std::string implan, std::string diagnostico, std::string tipo, std::string procedimiento,int estadoDeCirugias,Fecha fechaOperacion,int idCirugia){
 _estado = estado;
 strcpy(_observacion, obs.c_str());
 strcpy(_antibioticos, anti.c_str());
@@ -37,6 +37,7 @@ strcpy(_procedimientos, procedimiento.c_str());
 _id = id;
 _estadosDeCirugias = estadoDeCirugias;
 _fechaOperacion = fechaOperacion;
+_idCirugia = idCirugia;
 			}
 ///================================FIN==========================================
 
@@ -74,6 +75,10 @@ _estadosDeCirugias = estadoCirugia;
 
 void Cirugia::setFechaOperacion(Fecha fechaOperacion) {
 	_fechaOperacion = fechaOperacion;
+}
+
+void Cirugia::setIDCirugia(int id) {
+    _idCirugia = id;
 }
 ///================================FIN==========================================
 
@@ -118,5 +123,9 @@ return _estadosDeCirugias;
 
 Fecha Cirugia::getFechaOperacion() {
 	return _fechaOperacion;
+}
+
+int Cirugia::getIdCirugia(){
+    return _idCirugia;
 }
 ///================================FIN==========================================

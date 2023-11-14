@@ -70,8 +70,33 @@ bool CirugiaManager::validarID(Paciente &reg, Cirugia &aux, int &id)
         {
             aux = archivoC.leerRegistro(j);
 
-            if(id == reg.getID()&& id == aux.getID())
+
+            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 2)
             {
+
+                  setColor(RED);
+                   cout << "El paciente tiene un Estado de Cirugia en Curso." << endl;
+
+                  setColor(WHITE);
+                  return true;
+
+            }
+
+
+            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 3)
+            {
+
+                 setColor(YELLOW);
+                 cout<<"El paciente tiene un Estado de Cirugia por Finalizar"<<endl;
+                 setColor(WHITE);
+                return true;
+
+            }
+                if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 4)
+            {
+                  setColor(BLUE);
+                 cout<<"Cirugia Finalizada y Limpieza de Quirofano"<<endl;
+                 setColor(WHITE);
                 return true;
 
             }
@@ -83,6 +108,14 @@ bool CirugiaManager::validarID(Paciente &reg, Cirugia &aux, int &id)
 }
 ///================================FIN==========================================
 
+
+///=============================================================================
+/// FUNCION :bool CirugiaManager::validarID(Paciente &reg, int &id)
+/// ACCION : Validacion de ID
+/// PARAMETROS: Paciente &reg, int &id
+///
+/// DEVUELVE : bool --> true o false
+///-----------------------------------------------------------------------------
 
 bool CirugiaManager::validarID(Paciente &reg, int &id)
 {
@@ -100,6 +133,9 @@ bool CirugiaManager::validarID(Paciente &reg, int &id)
 
     return false;
 }
+
+
+
 ///=============================================================================
 /// FUNCION :void CirugiaManager::Cargar()
 /// ACCION : Cargar una cirugia
@@ -123,25 +159,35 @@ void CirugiaManager::Cargar()
     int estadoCirugia;
     Fecha fechaOperacion;
     Fecha fechalimite;
+    int idCirugia;
     bool salir=false;
+
+
 
     cls();
     do
     {
 
+
+
+
         cout << "Ingrese ID: ";
         id = obtenerEnteroValidado("");
 
+
+
         if (validarID(reg2, reg1, id))
         {
-            cout << "El ID ya tiene una cirugia pendiente." << endl;
+
             salir=true;
+
         }
         else if (!validarID(reg2, id))
         {
             cout << "El paciente no existe." << endl;
             salir=true;
         }
+
         else
         {
             cout << "Observaciones: ";
@@ -180,7 +226,14 @@ void CirugiaManager::Cargar()
             fechalimite.setAnio(2023);
             fechalimite.setMes(11);
             fechalimite.setDia(7);
-
+            idCirugia = generarID();
+           cout << "IdCirugia : " <<idCirugia<<endl;
+            //cout << "IDCirugia: " <<idCirugia<<endl;
+//            if(validarID(reg1,idCirugia))
+//            {
+//                cout << "ID ya utilizado"<<endl;
+//
+//            }
 
             if (fechaOperacion.toString("YYYY/MM/DD") <= fechalimite.toString("YYYY/MM/DD"))
             {
@@ -190,7 +243,7 @@ void CirugiaManager::Cargar()
             {
                 estadoCirugia = 1;
 
-                Cirugia reg(estadoCirugia, id, observacion, antibioticos, alergia, implantes, diagnostico, tipoDeCirugia, procedimientos, estadoCirugia, fechaOperacion);
+                Cirugia reg(estadoCirugia, id, observacion, antibioticos, alergia, implantes, diagnostico, tipoDeCirugia, procedimientos, estadoCirugia, fechaOperacion,idCirugia);
                 if(_archivo.guardar(reg)==true)
                 {
                     salir=true;
@@ -265,6 +318,8 @@ void CirugiaManager::Listar(Cirugia cirugia)
         cout << "Procedimiento: " << cirugia.getProcedimientos() << endl;
         cout << "Estado de cirugia: "<< cirugia.getEstadoCirugias() << endl;
         cout << "Fecha de Operacion : "<<cirugia.getFechaOperacion().toString()<<endl;
+         cout << "IdCirugia:" << cirugia.getIdCirugia() << endl;
+
         cout<<"---------------------------------------------------------------------"<<endl;
     }
 
@@ -320,7 +375,7 @@ bool CirugiaManager::existeID(int id)
 
 int CirugiaManager::generarID()
 {
-    return _archivo.getCantidadRegistros() + 1;
+    return _archivo.getCantidadRegistros() + 100;
 }
 ///================================FIN==========================================
 
@@ -477,7 +532,7 @@ void CirugiaManager::modificarCursoDeCirugia()
     cout << endl;
 
     int id;
-    cout <<"Ingrese ID de paciente a buscar: ";
+    cout <<"Ingrese ID de la Cirugia a buscar: ";
     id=obtenerEnteroValidado("");
 
     int nuevoCurso;
@@ -487,7 +542,7 @@ void CirugiaManager::modificarCursoDeCirugia()
 
         //cirugia = archivo.leerRegistro(i);
 
-        if(cirugia.getID()==id && cirugia.getEstado()==true)
+        if(cirugia.getIdCirugia()==id && cirugia.getEstado()==true)
         {
 
             reg.Listar(cirugia);
@@ -508,7 +563,7 @@ void CirugiaManager::modificarCursoDeCirugia()
 
         cirugia = archivo.leerRegistro(i);
 
-        if(cirugia.getID()==id && cirugia.getEstado()==true)
+        if(cirugia.getIdCirugia()==id && cirugia.getEstado()==true)
         {
 
             cirugia.setEstadoCirugias(nuevoCurso);
@@ -658,7 +713,7 @@ void CirugiaManager::promedioDeEtapas()
     cout << "PORCENTAJE ESTADO #3 (AMARILLO): " << porcentajeEstado3 << "%" << endl;
     setColor(BLUE);
     cout << "PORCENTAJE ESTADO #4 (AZUL): " << porcentajeEstado4 << "%" << endl;
-      setColor(WHITE);
+    setColor(WHITE);
 }
 Cirugia CirugiaManager::ObtenerCirugiaPorIdPaciente(int idPaciente)
 {

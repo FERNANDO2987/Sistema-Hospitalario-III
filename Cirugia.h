@@ -33,6 +33,7 @@ private:
     char _procedimientos[100];
     int _estadosDeCirugias;
     Fecha _fechaOperacion;
+    int _idCirugia;
 
 
 public:
@@ -40,7 +41,7 @@ public:
     Cirugia();
 
     Cirugia(bool estado, int id, std::string observacion, std::string antibioticos, bool alergia, std::string implantes,
-        std::string diagnostico, std::string tipoDeCirugia, std::string procedimiento, int estadoDeCirugias,Fecha fechaOperacion);
+        std::string diagnostico, std::string tipoDeCirugia, std::string procedimiento, int estadoDeCirugias,Fecha fechaOperacion,int idCirugia);
 
 
    //set
@@ -55,6 +56,7 @@ public:
     void setProcedimientos (std::string procedimientos);
     void setEstadoCirugias(int estadoCirugia);
     void setFechaOperacion(Fecha fechaOperacion);
+    void setIDCirugia(int idcirugia);
 
 
 
@@ -70,6 +72,7 @@ public:
     std::string getProcedimientos();
     int getEstadoCirugias();
     Fecha getFechaOperacion();
+    int getIdCirugia();
 
 };
 
