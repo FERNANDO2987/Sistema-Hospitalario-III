@@ -12,7 +12,7 @@
 // Aqui se desarrollan la Metodos de la class CirugiaManager
 //
 /////////////////////////////////////////////////////////////////////////////////
-
+#include <limits> //Proporciona límites y propiedades de datos.
 #include <iostream>
 #include <string>
 using namespace std;
@@ -74,6 +74,9 @@ bool CirugiaManager::validarID(Paciente &reg, Cirugia &aux, int &id)
 
 
 
+
+
+
             if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 2)
             {
 
@@ -95,12 +98,22 @@ bool CirugiaManager::validarID(Paciente &reg, Cirugia &aux, int &id)
                 return true;
 
             }
+
             if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 4)
             {
                 setColor(BLUE);
+
                 cout<<"Cirugia Finalizada y Limpieza de Quirofano"<<endl;
+
                 setColor(WHITE);
-                return true;
+                aux.setEstadoCirugias(1);
+                Sleep(2000);
+                cls();
+                cout<<"Puede Cargar una nueva Cirugia"<<endl;
+
+
+
+                return false;
 
             }
 
@@ -111,6 +124,8 @@ bool CirugiaManager::validarID(Paciente &reg, Cirugia &aux, int &id)
     return false;
 }
 ///================================FIN==========================================
+
+
 
 
 ///=============================================================================
@@ -207,37 +222,55 @@ void CirugiaManager::Cargar()
             cin.ignore();
             cout << "Observaciones: ";
             getline(cin, observacion);
-            // Add validation for observacion if needed
+
 
             cout << "Antibioticos: ";
             getline(cin, antibioticos);
-            // Add validation for antibioticos if needed
+
+
+//            cout << "Alergico: 1 = SI / 0 = NO ";
+//            cin >> alergia;
+//            cin.ignore();
 
             cout << "Alergico: 1 = SI / 0 = NO ";
-            cin >> alergia;
-            cin.ignore();
-            // Add validation for alergia (e.g., ensure it's 0 or 1)
+            while (true)
+            {
+                cin >> alergia;
+                if (cin.fail() || (alergia != 0 && alergia != 1))
+                {
+                    cin.clear();  // Restaurar el estado de cin después de un error
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n');  // Limpiar el búfer de entrada
+                    cout << "Entrada no valida. Por favor, ingrese 1 o 0." << endl;
+                }
+                else
+                {
+                    cin.ignore();  // Limpiar el carácter de nueva línea restante en el búfer
+                    break;  // Salir del bucle si la entrada es válida
+                }
+            }
+
+
 
             cout << "Implantes: ";
             getline(cin, implantes);
-            // Add validation for implantes if needed
+
 
             cout << "Diagnostico: ";
             getline(cin, diagnostico);
-            // Add validation for diagnostico if needed
+
 
             cout << "Tipo de cirugia: ";
             getline(cin, tipoDeCirugia);
-            // Add validation for tipoDeCirugia if needed
+
 
             cout << "Procedimiento: ";
             getline(cin, procedimientos);
-            // Add validation for procedimientos if needed
+
 
 
 
             cout << "Fecha de Operacion/visita (dd mm aaaa): ";
-            fechaOperacion.Cargar(); // Assuming the user inputs the date
+            fechaOperacion.Cargar();
             fechalimite.setAnio(2023);
             fechalimite.setMes(11);
             fechalimite.setDia(7);
