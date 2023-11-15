@@ -222,7 +222,7 @@ void PacienteManager::Listar(Paciente paciente)
         cout << "Historial clinico: "<< paciente.getHistorialClinico()<<endl;
         cout << "Profesional asignado: "<< paciente.getProfesionalAsignado()<<endl;
 
-        cout<<"--------------------------------------------------"<<endl;
+        cout<<"--------------------------------------"<<endl;
     }
 }
 

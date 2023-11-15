@@ -69,7 +69,41 @@ bool CirugiaManager::validarID(Paciente &reg, Cirugia &aux, int &id)
         for(int j = 0; j<cantRegCirugia; j++)
         {
             aux = archivoC.leerRegistro(j);
+
             return true;
+
+
+
+            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 2)
+            {
+
+                setColor(RED);
+                cout << "El paciente tiene un Estado de Cirugia en Curso." << endl;
+
+                setColor(WHITE);
+                return true;
+
+            }
+
+
+            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 3)
+            {
+
+                setColor(YELLOW);
+                cout<<"El paciente tiene un Estado de Cirugia por Finalizar"<<endl;
+                setColor(WHITE);
+                return true;
+
+            }
+            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 4)
+            {
+                setColor(BLUE);
+                cout<<"Cirugia Finalizada y Limpieza de Quirofano"<<endl;
+                setColor(WHITE);
+                return true;
+
+            }
+
 
         }
     }
@@ -208,7 +242,7 @@ void CirugiaManager::Cargar()
             fechalimite.setMes(11);
             fechalimite.setDia(7);
             idCirugia = generarID();
-           cout << "IdCirugia : " <<idCirugia<<endl;
+            cout << "IdCirugia : " <<idCirugia<<endl;
             //cout << "IDCirugia: " <<idCirugia<<endl;
 //            if(validarID(reg1,idCirugia))
 //            {
@@ -218,7 +252,7 @@ void CirugiaManager::Cargar()
 
             if (fechaOperacion.toString("YYYY/MM/DD") <= fechalimite.toString("YYYY/MM/DD"))
             {
-                cout << "La fecha de operación/visita no puede ser antes de Noviembre del 2023. Por favor, ingrese una fecha válida." << endl;
+                cout << "La fecha de operaciï¿½n/visita no puede ser antes de Noviembre del 2023. Por favor, ingrese una fecha vï¿½lida." << endl;
             }
             else
             {
@@ -363,7 +397,7 @@ void CirugiaManager::Listar(Cirugia cirugia)
         cout << "Procedimiento: " << cirugia.getProcedimientos() << endl;
         cout << "Estado de cirugia: "<< cirugia.getEstadoCirugias() << endl;
         cout << "Fecha de Operacion : "<<cirugia.getFechaOperacion().toString()<<endl;
-         cout << "IdCirugia:" << cirugia.getIdCirugia() << endl;
+        cout << "IdCirugia:" << cirugia.getIdCirugia() << endl;
 
         cout<<"---------------------------------------------------------------------"<<endl;
     }
@@ -445,8 +479,9 @@ void CirugiaManager::buscarHC()
     int cantRegCirugias = archivoC.getCantidadRegistros();
     int hc;
     cout << "Ingrese la HC a buscar: ";
-    cout << endl;
+
     hc = obtenerEnteroValidado("");
+    cout << endl;
     bool encontro = false;
 
     for (int i = 0; i < cantRegPacientes; i++)

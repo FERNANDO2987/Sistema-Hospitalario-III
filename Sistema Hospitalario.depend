@@ -3256,14 +3256,14 @@
 	"TipoDocumento.h"
 	<string>
 
-1699991665 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\cirugiamanager.cpp
+1700008250 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\cirugiamanager.cpp
 	<iostream>
 	<string>
 	"CirugiaManager.h"
 	"PacienteManager.h"
 	"rlutil.h"
 
-1699578541 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\pacientemanager.cpp
+1700008113 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\pacientemanager.cpp
 	<iostream>
 	<string.h>
 	<cstring>
