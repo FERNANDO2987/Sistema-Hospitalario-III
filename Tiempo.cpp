@@ -14,6 +14,7 @@
 /////////////////////////////////////////////////////////////////////////////////
 
 #include <iostream>
+#include "PacienteManager.h"
 
 using namespace std;
 #include "Tiempo.h"
@@ -50,11 +51,11 @@ int Tiempo::getSegundos() {
 
 void Tiempo::Cargar(){
 cout << "Horas: ";
-cin>>horas;
+horas = obtenerEnteroValidado("");
 cout << "Minutos: ";
-cin>>minutos;
+minutos = obtenerEnteroValidado("");
 cout << "Segundos: ";
-cin>>segundos;
+segundos = obtenerEnteroValidado("");
 }
 
 void Tiempo::Mostrar(){

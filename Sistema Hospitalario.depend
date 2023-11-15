@@ -3279,3 +3279,200 @@
 	<iomanip>
 	"rlutil.h"
 
+1699412380 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\archivocirugia.cpp
+	<iostream>
+	"ArchivoCirugia.h"
+
+1699412380 c:\users\lourdes\documents\github\sistema-hospitalario-iii\archivocirugia.h
+	<string>
+	"Cirugia.h"
+
+1699997653 c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugia.h
+	<string>
+	"Fecha.h"
+
+1699498071 c:\users\lourdes\documents\github\sistema-hospitalario-iii\fecha.h
+	<iostream>
+	<cstring>
+
+1699412380 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\archivopaciente.cpp
+	"ArchivoPaciente.h"
+	<cstdio>
+
+1699412380 c:\users\lourdes\documents\github\sistema-hospitalario-iii\archivopaciente.h
+	"Paciente.h"
+	<string>
+
+1699486605 c:\users\lourdes\documents\github\sistema-hospitalario-iii\paciente.h
+	<string>
+	"Fecha.h"
+	"Tiempo.h"
+
+1699412380 c:\users\lourdes\documents\github\sistema-hospitalario-iii\tiempo.h
+
+1699412380 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\archivoprofesional.cpp
+	<iostream>
+	<string>
+	"ArchivoProfesional.h"
+	"Profesional.h"
+
+1699412380 c:\users\lourdes\documents\github\sistema-hospitalario-iii\archivoprofesional.h
+	"Profesional.h"
+	<string>
+
+1699412380 c:\users\lourdes\documents\github\sistema-hospitalario-iii\profesional.h
+	<string>
+
+1699412380 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\archivoquirofano.cpp
+	<iostream>
+	<cstdio>
+	"ArchivoQuirofano.h"
+
+1699412380 c:\users\lourdes\documents\github\sistema-hospitalario-iii\archivoquirofano.h
+	<string>
+	"Quirofano.h"
+
+1699412380 c:\users\lourdes\documents\github\sistema-hospitalario-iii\quirofano.h
+	"Tiempo.h"
+	<string>
+
+1699997653 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugia.cpp
+	<string>
+	<cstring>
+	<string>
+	"Cirugia.h"
+
+1700012600 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugiamanager.cpp
+	<iostream>
+	<string>
+	"CirugiaManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1700010983 c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugiamanager.h
+	"Cirugia.h"
+	"Paciente.h"
+	"ArchivoCirugia.h"
+
+1699579390 c:\users\lourdes\documents\github\sistema-hospitalario-iii\pacientemanager.h
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	"ArchivoPaciente.h"
+	"ArchivoCirugia.h"
+	"Paciente.h"
+
+1699412380 c:\users\lourdes\documents\github\sistema-hospitalario-iii\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1700009090 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+	<sstream>
+	<cctype>
+
+1699412380 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\main.cpp
+	<iostream>
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"QuirofanoManager.h"
+	"ProfesionalManager.h"
+	"CirugiaManager.h"
+	"rlutil.h"
+	"Tiempo.h"
+
+1699412380 c:\users\lourdes\documents\github\sistema-hospitalario-iii\menu.h
+
+1699412380 c:\users\lourdes\documents\github\sistema-hospitalario-iii\quirofanomanager.h
+	"Quirofano.h"
+	"ArchivoQuirofano.h"
+
+1699412380 c:\users\lourdes\documents\github\sistema-hospitalario-iii\profesionalmanager.h
+	"Profesional.h"
+	"ArchivoProfesional.h"
+
+1700009380 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\menu.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<time.h>
+	"rlutil.h"
+	"Menu.h"
+	"ArchivoPaciente.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"QuirofanoManager.h"
+	"Fecha.h"
+	"Tiempo.h"
+	"ProfesionalManager.h"
+
+1699579407 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\paciente.cpp
+	<string>
+	<cstring>
+	"Paciente.h"
+	"Fecha.h"
+
+1700001872 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\pacientemanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<cstdlib>
+	<ctime>
+	<unordered_set>
+	"Cirugia.h"
+	"PacienteManager.h"
+	"CirugiaManager.h"
+	"ProfesionalManager.h"
+	<iomanip>
+	"rlutil.h"
+
+1699412380 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\profesional.cpp
+	<iostream>
+	<cstring>
+	"Profesional.h"
+
+1699412380 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\profesionalmanager.cpp
+	<iostream>
+	<string.h>
+	<cstring>
+	<sstream>
+	<cctype>
+	<iomanip>
+	"ProfesionalManager.h"
+	"PacienteManager.h"
+	"rlutil.h"
+
+1699412380 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\quirofano.cpp
+	<iostream>
+	<cstring>
+	"Quirofano.h"
+
+1699998605 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\quirofanomanager.cpp
+	<iostream>
+	<string>
+	<cctype>
+	"QuirofanoManager.h"
+	"Quirofano.h"
+	"Tiempo.h"
+
+1700009090 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\tiempo.cpp
+	<iostream>
+	"Tiempo.h"
+

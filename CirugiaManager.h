@@ -43,6 +43,8 @@ class CirugiaManager
 		void modificarCursoDeCirugia();
 		///Elimina una cirugia
 		void EliminarCirugia(Cirugia &aux);
+		///Pregunta el estado color
+		bool PreguntaEstado(Paciente &reg1, Cirugia &aux, int &id);
 		/// INFORMES
 		void obtenerProcedimientosXFecha();
 		void promedioDeEtapas();

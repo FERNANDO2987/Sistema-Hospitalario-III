@@ -69,37 +69,7 @@ bool CirugiaManager::validarID(Paciente &reg, Cirugia &aux, int &id)
         for(int j = 0; j<cantRegCirugia; j++)
         {
             aux = archivoC.leerRegistro(j);
-
-
-            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 2)
-            {
-
-                  setColor(RED);
-                   cout << "El paciente tiene un Estado de Cirugia en Curso." << endl;
-
-                  setColor(WHITE);
-                  return true;
-
-            }
-
-
-            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 3)
-            {
-
-                 setColor(YELLOW);
-                 cout<<"El paciente tiene un Estado de Cirugia por Finalizar"<<endl;
-                 setColor(WHITE);
-                return true;
-
-            }
-                if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 4)
-            {
-                  setColor(BLUE);
-                 cout<<"Cirugia Finalizada y Limpieza de Quirofano"<<endl;
-                 setColor(WHITE);
-                return true;
-
-            }
+            return true;
 
         }
     }
@@ -188,8 +158,19 @@ void CirugiaManager::Cargar()
             salir=true;
         }
 
+        if(!PreguntaEstado(reg2, reg1, id)){
+            return;
+        }
+        bool op;
+        cout << "quiere cargar otra cirugia? 1-SI 0-NO ";
+        cin >> op;
+        if(!op){
+            return;
+        }
+
         else
         {
+            cin.ignore();
             cout << "Observaciones: ";
             getline(cin, observacion);
             // Add validation for observacion if needed
@@ -264,6 +245,70 @@ void CirugiaManager::Cargar()
 }
 
 ///================================FIN==========================================
+
+bool CirugiaManager::PreguntaEstado(Paciente &reg, Cirugia &aux, int &id){
+    ArchivoCirugia archivoC ("archivoCirugia.dat");
+    int cantRegCirugia = archivoC.getCantidadRegistros();
+    ArchivoPaciente archivoP ("archivoPaciente.dat");
+    int cant = archivoP.getCantidadRegistros();
+    for(int i  =0 ; i<cant; i++)
+    {
+        reg = archivoP.leerRegistro(i);
+        for(int j = 0; j<cantRegCirugia; j++)
+        {
+            aux = archivoC.leerRegistro(j);
+
+            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 1)
+            {
+                  setColor(GREEN);
+                 cout<<"Inicio de cirugia"<<endl;
+                 setColor(WHITE);
+                 Sleep(3000);
+                 cls();
+
+
+                return true;
+
+            }
+            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 2)
+            {
+
+                  setColor(RED);
+                   cout << "El paciente tiene un Estado de Cirugia en Curso." << endl;
+
+                  setColor(WHITE);
+                  return false;
+
+            }
+
+
+            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 3)
+            {
+
+                 setColor(YELLOW);
+                 cout<<"El paciente tiene un Estado de Cirugia por Finalizar"<<endl;
+                 setColor(WHITE);
+
+                return false;
+
+            }
+                if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 4)
+            {
+                  setColor(BLUE);
+                 cout<<"Cirugia Finalizada y Limpieza de Quirofano"<<endl;
+                 setColor(WHITE);
+                 Sleep(3000);
+                 cls();
+
+                return true;
+
+            }
+
+        }
+    }
+
+    return false;
+}
 
 ///=============================================================================
 /// FUNCION :void CirugiaManager::Listar(Cirugia cirugia)
@@ -606,7 +651,7 @@ void CirugiaManager::modificarCursoDeCirugia()
     }
 
     cout << "Nuevo Estado de cirugia: ";
-    cin>>nuevoCurso;
+    nuevoCurso = obtenerEnteroValidado("");
 
     cout << "================="<<endl;
     cout << "DATOS MODIFICADOS"<<endl;
