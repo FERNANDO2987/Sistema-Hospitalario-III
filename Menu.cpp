@@ -644,8 +644,9 @@ void Menu::MenuCirugia()
         showItem(" LISTADO DE CIRUGIAS ",40, 13, y==2);
         showItem(" CAMBIAR ESTADO DE LA CIRUGIA ",40, 14, y==3);
         showItem(" MOSTRAR CIRUGIA POR APELLIDO ",40, 15, y==4);
+        showItem(" BUSCAR CIRUGIA POR HC ",40, 16, y==5);
         //showItem(" ELIMINAR CIRUGIA ",40, 16, y==5);
-        showItem(" VOLVER  ",40, 16, y==5);
+        showItem(" VOLVER  ",40, 17, y==6);
 
 
         switch(getkey())
@@ -665,9 +666,9 @@ void Menu::MenuCirugia()
             locate(38,11 +y);
             cout<<" "<<endl;
             y++; ///mueve hacia abajo
-            if(y>5) ///limitacion de movimiento
+            if(y>6) ///limitacion de movimiento
             {
-                y=5;
+                y=6;
             }
 
             break;
@@ -688,7 +689,7 @@ void Menu::MenuCirugia()
                 break;
             case 1:
                 cls();
-                _cirugiaManager.mostrarCirugiaYPaciente();
+                _cirugiaManager.buscarHC();
                 cout << endl;
                 setColor(WHITE);
                 system("pause");
@@ -723,17 +724,17 @@ void Menu::MenuCirugia()
                 setColor(WHITE);
                 break;
 
-           /* case 5:
+         case 5:
                 cls();
-               // _cirugiaManager.EliminarCirugia(cirugia);
+                 _cirugiaManager.buscarHC();
                 cout << endl;
                 setColor(WHITE);
                 system("pause");
                 cls();
                 setColor(WHITE);
-                break;*/
+                break;
 
-            case 5:
+            case 6:
                 cls();
                 op=0;
                 break;

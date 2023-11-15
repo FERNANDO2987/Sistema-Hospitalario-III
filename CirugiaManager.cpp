@@ -389,31 +389,51 @@ int CirugiaManager::generarID()
 void CirugiaManager::buscarHC()
 {
     PacienteManager reg;
+    CirugiaManager regCirugia;
     Paciente paciente;
+    Cirugia cirugia;
 
-    ArchivoPaciente archivo ("archivoPaciente.dat");
+    ArchivoPaciente archivo("archivoPaciente.dat");
+    ArchivoCirugia archivoC("archivoCirugia.dat");
 
     int cantRegPacientes = archivo.getCantidadRegistros();
+    int cantRegCirugias = archivoC.getCantidadRegistros();
     int hc;
-    cout <<"Ingrese la HC a buscar: ";
-    hc=obtenerEnteroValidado("");
+    cout << "Ingrese la HC a buscar: ";
+    cout << endl;
+    hc = obtenerEnteroValidado("");
     bool encontro = false;
-    for(int i = 0; i<cantRegPacientes; i++)
+
+    for (int i = 0; i < cantRegPacientes; i++)
     {
         paciente = archivo.leerRegistro(i);
 
-        if(paciente.getHistorialClinico()==hc && paciente.getEstado()==true)
+        // Only list the patient once if found
+        if (paciente.getHistorialClinico() == hc && paciente.getEstado() == true)
         {
             reg.Listar(paciente);
             encontro = true;
+
+        }
+
+        // List all surgeries associated with the patient
+        for (int j = 0; j < cantRegCirugias; j++)
+        {
+            cirugia = archivoC.leerRegistro(j);
+            if (paciente.getHistorialClinico() == hc && paciente.getEstado() == true)
+            {
+                regCirugia.listarCirugiasPorHC(cirugia);
+                cout << "-------------------------------------" << endl;
+            }
         }
     }
-    if(encontro == false)
-    {
-        cout << "NO SE ENCONTRO PACIENTES CON ESA #HC .. "<<endl;
-    }
 
+    if (encontro == false)
+    {
+        cout << "NO SE ENCONTRO PACIENTES CON ESA #HC .. " << endl;
+    }
 }
+
 ///================================FIN==========================================
 
 ///=============================================================================
@@ -497,10 +517,46 @@ void CirugiaManager::listarCirugias(Cirugia cirugia)
     cout << "Implantes: " << cirugia.getImplantes() << endl;
     cout << "Diagnostico: " << cirugia.getDiagnostico() << endl;
     cout << "Tipo de cirgugia: " << cirugia.getTipoDeCirugia() << endl;
-    cout << "Procedimiento: " << cirugia.getProcedimientos() << endl;
+    cout << "Procedimiento: " << cirugia.getProcedimientos()<< endl;
+
     ///vuelve a la normalidad el color
 }
 ///================================FIN==========================================
+
+void CirugiaManager::listarCirugiasPorHC(Cirugia cirugia)
+{
+
+    int estado = cirugia.getEstadoCirugias();
+    switch(estado)
+    {
+    case 1:
+        setColor(GREEN);
+        break;
+    case 2:
+        setColor(RED);
+        break;
+    case 3:
+        setColor(YELLOW);
+        break;
+    case 4:
+        setColor(BLUE);
+        break;
+    default:
+        setColor(WHITE);
+        break;
+    }
+    cout << "Observaciones: " << cirugia.getObservaciones() << endl;
+    cout << "Antibioticos: " << cirugia.getAntibioticos() << endl;
+    cout << "Alergico: 1 = SI / 0 = NO " << cirugia.getAlergia() << endl;
+    cout << "Implantes: " << cirugia.getImplantes() << endl;
+    cout << "Diagnostico: " << cirugia.getDiagnostico() << endl;
+    cout << "Tipo de cirgugia: " << cirugia.getTipoDeCirugia() << endl;
+    cout << "Procedimiento: " << cirugia.getProcedimientos() << endl;
+    cout << "Fecha de Visita: " << cirugia.getFechaOperacion().getAnio()<<"/"<<cirugia.getFechaOperacion().getMes()<<"/"<<cirugia.getFechaOperacion().getDia()<< endl;
+    ///vuelve a la normalidad el color
+}
+
+
 
 ///=============================================================================
 /// FUNCION :void CirugiaManager::modificarCursoDeCirugia()

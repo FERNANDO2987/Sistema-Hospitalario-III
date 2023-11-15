@@ -37,6 +37,8 @@ class CirugiaManager
 		void mostrarCirugiaYPaciente();
 		/// muestra paciente
 		void listarCirugias(Cirugia cirugia);
+        ///Lista la cirugia por HC
+		void listarCirugiasPorHC(Cirugia cirugia);
 		///Cambia el curso de la cirugia
 		void modificarCursoDeCirugia();
 		///Elimina una cirugia
