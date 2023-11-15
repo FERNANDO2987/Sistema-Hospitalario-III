@@ -3166,7 +3166,7 @@
 	"Profesional.h"
 	"ArchivoProfesional.h"
 
-1699990820 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\cirugiamanager.h
+1700013388 c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\cirugiamanager.h
 	"Cirugia.h"
 	"Paciente.h"
 	"ArchivoCirugia.h"
@@ -3248,22 +3248,24 @@
 	"Quirofano.h"
 	"Tiempo.h"
 
-1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\tiempo.cpp
+1700013388 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\tiempo.cpp
 	<iostream>
+	"PacienteManager.h"
 	"Tiempo.h"
 
 1699238167 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\tipodocumento.cpp
 	"TipoDocumento.h"
 	<string>
 
-1700008250 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\cirugiamanager.cpp
+1700013496 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\cirugiamanager.cpp
+	<limits>
 	<iostream>
 	<string>
 	"CirugiaManager.h"
 	"PacienteManager.h"
 	"rlutil.h"
 
-1700008113 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\pacientemanager.cpp
+1700013388 source:c:\users\fpalacio\onedrive\escritorio\nueva carpeta\sistemagit\sistema-hospitalario-iii\pacientemanager.cpp
 	<iostream>
 	<string.h>
 	<cstring>

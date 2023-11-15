@@ -13,6 +13,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////////
 #include <limits> //Proporciona límites y propiedades de datos.
+#include <cctype>  // Para usar la función std::isdigit
 #include <iostream>
 #include <string>
 using namespace std;
@@ -207,13 +208,15 @@ void CirugiaManager::Cargar()
             salir=true;
         }
 
-        if(!PreguntaEstado(reg2, reg1, id)){
+        if(!PreguntaEstado(reg2, reg1, id))
+        {
             return;
         }
         bool op;
         cout << "quiere cargar otra cirugia? 1-SI 0-NO ";
         cin >> op;
-        if(!op){
+        if(!op)
+        {
             return;
         }
 
@@ -235,18 +238,22 @@ void CirugiaManager::Cargar()
             cout << "Alergico: 1 = SI / 0 = NO ";
             while (true)
             {
-                cin >> alergia;
-                if (cin.fail() || (alergia != 0 && alergia != 1))
+                string input;
+                cin >> input;
+
+                if (input.length() == 1 && isdigit(input[0]))
                 {
-                    cin.clear();  // Restaurar el estado de cin después de un error
-                    cin.ignore(numeric_limits<streamsize>::max(), '\n');  // Limpiar el búfer de entrada
-                    cout << "Entrada no valida. Por favor, ingrese 1 o 0." << endl;
+                    alergia = stoi(input);
+
+                    if (alergia == 0 || alergia == 1)
+                    {
+                        break;  // Salir del bucle si la entrada es válida
+                    }
                 }
-                else
-                {
-                    cin.ignore();  // Limpiar el carácter de nueva línea restante en el búfer
-                    break;  // Salir del bucle si la entrada es válida
-                }
+
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                cout << "Entrada no valida. Por favor, ingrese 1 o 0." << endl;
             }
 
 
@@ -313,7 +320,8 @@ void CirugiaManager::Cargar()
 
 ///================================FIN==========================================
 
-bool CirugiaManager::PreguntaEstado(Paciente &reg, Cirugia &aux, int &id){
+bool CirugiaManager::PreguntaEstado(Paciente &reg, Cirugia &aux, int &id)
+{
     ArchivoCirugia archivoC ("archivoCirugia.dat");
     int cantRegCirugia = archivoC.getCantidadRegistros();
     ArchivoPaciente archivoP ("archivoPaciente.dat");
@@ -327,11 +335,11 @@ bool CirugiaManager::PreguntaEstado(Paciente &reg, Cirugia &aux, int &id){
 
             if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 1)
             {
-                  setColor(GREEN);
-                 cout<<"Inicio de cirugia"<<endl;
-                 setColor(WHITE);
-                 Sleep(3000);
-                 cls();
+                setColor(GREEN);
+                cout<<"Inicio de cirugia"<<endl;
+                setColor(WHITE);
+                Sleep(3000);
+                cls();
 
 
                 return true;
@@ -340,11 +348,11 @@ bool CirugiaManager::PreguntaEstado(Paciente &reg, Cirugia &aux, int &id){
             if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 2)
             {
 
-                  setColor(RED);
-                   cout << "El paciente tiene un Estado de Cirugia en Curso." << endl;
+                setColor(RED);
+                cout << "El paciente tiene un Estado de Cirugia en Curso." << endl;
 
-                  setColor(WHITE);
-                  return false;
+                setColor(WHITE);
+                return false;
 
             }
 
@@ -352,20 +360,20 @@ bool CirugiaManager::PreguntaEstado(Paciente &reg, Cirugia &aux, int &id){
             if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 3)
             {
 
-                 setColor(YELLOW);
-                 cout<<"El paciente tiene un Estado de Cirugia por Finalizar"<<endl;
-                 setColor(WHITE);
+                setColor(YELLOW);
+                cout<<"El paciente tiene un Estado de Cirugia por Finalizar"<<endl;
+                setColor(WHITE);
 
                 return false;
 
             }
-                if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 4)
+            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 4)
             {
-                  setColor(BLUE);
-                 cout<<"Cirugia Finalizada y Limpieza de Quirofano"<<endl;
-                 setColor(WHITE);
-                 Sleep(3000);
-                 cls();
+                setColor(BLUE);
+                cout<<"Cirugia Finalizada y Limpieza de Quirofano"<<endl;
+                setColor(WHITE);
+                Sleep(3000);
+                cls();
 
                 return true;
 
