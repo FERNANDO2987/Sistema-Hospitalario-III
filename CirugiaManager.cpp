@@ -60,81 +60,70 @@ bool CirugiaManager::Modificar(Cirugia &reg, int i)
 ///-----------------------------------------------------------------------------
 bool CirugiaManager::validarID(Paciente &reg, Cirugia &aux, int &id)
 {
-    ArchivoCirugia archivoC ("archivoCirugia.dat");
+    ArchivoCirugia archivoC("archivoCirugia.dat");
     int cantRegCirugia = archivoC.getCantidadRegistros();
-    ArchivoPaciente archivoP ("archivoPaciente.dat");
+    ArchivoPaciente archivoP("archivoPaciente.dat");
     int cant = archivoP.getCantidadRegistros();
-    for(int i  =0 ; i<cant; i++)
+    int contador1 = 0;
+
+    for (int i = 0; i < cant; i++)
     {
         reg = archivoP.leerRegistro(i);
-        for(int j = 0; j<cantRegCirugia; j++)
+        aux = archivoC.leerUltimaCirugia();  // Utiliza el nuevo método para obtener la última cirugía
+
+        if (id == reg.getID() && id == aux.getID())
         {
-            aux = archivoC.leerRegistro(j);
-
-            return true;
-//int a = 0;
-            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 1)
+            // Mensajes y acciones relacionadas con el estado de la cirugía
+            switch (aux.getEstadoCirugias())
             {
-
-
+            case 1:
                 setColor(GREEN);
                 cout << "El paciente tiene una Cirugia iniciada." << endl;
-
                 setColor(WHITE);
-  //              a++;
                 return true;
 
-            }
-
-
-
-
-            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 2)
-            {
-
+            case 2:
                 setColor(RED);
-                cout << "El paciente tiene un Estado de Cirugia en Curso." << endl;
-
+                cout << "El paciente tiene un Estado de Cirugía en Curso." << endl;
                 setColor(WHITE);
                 return true;
 
-            }
-
-
-            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 3)
-            {
-
+            case 3:
                 setColor(YELLOW);
-                cout<<"El paciente tiene un Estado de Cirugia por Finalizar"<<endl;
+                cout << "El paciente tiene un Estado de Cirugia por Finalizar." << endl;
                 setColor(WHITE);
                 return true;
 
-            }
-
-            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 4)
-            {
+            case 4:
                 setColor(BLUE);
-
-                cout<<"Cirugia Finalizada y Limpieza de Quirofano"<<endl;
-
+                cout << "Cirugia Finalizada y Limpieza de Quirofano." << endl;
                 setColor(WHITE);
-                aux.setEstadoCirugias(1);
-                Sleep(2000);
-                cls();
-                cout<<"Puede Cargar una nueva Cirugia"<<endl;
+                contador1++;
 
+                  // Preguntar si se desea cargar una nueva cirugía
+                char respuesta;
+                cout << "Desea cargar una nueva cirugía para este paciente (S/N): ";
+                cin >> respuesta;
+                cin.ignore();
 
+                if (respuesta == 'N' || respuesta == 'n') {
+                    return true;
+                }
 
                 return false;
 
+            default:
+                // Otro estado no manejado
+                return false;
+
             }
-
-
         }
     }
 
     return false;
 }
+
+
 ///================================FIN==========================================
 
 
@@ -192,6 +181,7 @@ void CirugiaManager::Cargar()
     Fecha fechalimite;
     int idCirugia;
     bool salir=false;
+    int estadoAnterior;
 
 
     do
@@ -205,7 +195,7 @@ void CirugiaManager::Cargar()
         {
 
 
-            salir=false;
+            salir=true;
 
         }
         else if (!validarID(reg2, id))
@@ -213,32 +203,36 @@ void CirugiaManager::Cargar()
             cout << "El paciente no existe." << endl;
             salir=true;
         }
-
-        if(PreguntaEstado(reg2, reg1, id))
-        {
-        int op;
-        do{
-            cout << "quiere cargar otra cirugia? 1-SI 0-NO ";
-            op = obtenerEnteroValidado("");
-            if (op <0 || op > 1){
-                cout << "error al ingresar valor, vuelva a intentarlo" << endl;
-            }
-        }while(op <0 || op > 1);
-        cls();
-        if(op == 0)
-        {
-            return;
-        }
-
-        }
         else{
-            return;
-        }
+
+//        if(PreguntaEstado(reg2, reg1, id))
+//        {
+//
+//            return;
+//           }
+//        int op;
+//        do{
+//            cout << "quiere cargar otra cirugia? 1-SI 0-NO ";
+//            op = obtenerEnteroValidado("");
+//            if (op <0 || op > 1){
+//                cout << "error al ingresar valor, vuelva a intentarlo" << endl;
+//            }
+//        }while(op <0 || op > 1);
+//        cls();
+//        if(op == 0)
+//        {
+//            return;
+//        }
+//
+//        }
+//        else{
+//            return;
+//        }
 
 
 
 
-
+             cout<<endl;
             cout << "Observaciones: ";
             getline(cin, observacion);
 
@@ -295,8 +289,9 @@ void CirugiaManager::Cargar()
             else
             {
                 estadoCirugia = 1;
+                estadoAnterior=0;
 
-                Cirugia reg(estadoCirugia, id, observacion, antibioticos, alergia, implantes, diagnostico, tipoDeCirugia, procedimientos, estadoCirugia, fechaOperacion,idCirugia);
+                Cirugia reg(estadoCirugia, id, observacion, antibioticos, alergia, implantes, diagnostico, tipoDeCirugia, procedimientos, estadoCirugia, fechaOperacion,idCirugia,estadoAnterior);
                 if(_archivo.guardar(reg)==true)
                 {
                     salir=true;
@@ -307,7 +302,7 @@ void CirugiaManager::Cargar()
             cin.ignore();
 
 
-
+}
 
     }
     while(!salir);

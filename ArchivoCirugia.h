@@ -40,5 +40,7 @@ public:
     ///
     bool guardarModificacionC(Cirugia reg, int pos);
 
+     Cirugia leerUltimaCirugia();
+
 };
 #endif // ARCHIVOCIRUGIA_H

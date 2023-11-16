@@ -34,6 +34,7 @@ private:
     int _estadosDeCirugias;
     Fecha _fechaOperacion;
     int _idCirugia;
+    int _estadoAnterior;
 
 
 public:
@@ -41,7 +42,7 @@ public:
     Cirugia();
 
     Cirugia(bool estado, int id, std::string observacion, std::string antibioticos, bool alergia, std::string implantes,
-        std::string diagnostico, std::string tipoDeCirugia, std::string procedimiento, int estadoDeCirugias,Fecha fechaOperacion,int idCirugia);
+        std::string diagnostico, std::string tipoDeCirugia, std::string procedimiento, int estadoDeCirugias,Fecha fechaOperacion,int idCirugi,int estadoAnterior);
 
 
    //set
@@ -57,6 +58,7 @@ public:
     void setEstadoCirugias(int estadoCirugia);
     void setFechaOperacion(Fecha fechaOperacion);
     void setIDCirugia(int idcirugia);
+    void setEstadoAnterior(int estadoanterior);
 
 
 
@@ -73,6 +75,7 @@ public:
     int getEstadoCirugias();
     Fecha getFechaOperacion();
     int getIdCirugia();
+    int getEstadoCirugiasAnterior();
 
 };
 

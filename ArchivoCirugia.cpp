@@ -173,3 +173,27 @@ bool ArchivoCirugia::guardarModificacionC(Cirugia aux, int pos){
 
 
 }
+
+
+Cirugia ArchivoCirugia::leerUltimaCirugia() {
+    Cirugia reg;
+    FILE *p;
+
+    p = fopen(_nombre.c_str(), "rb");
+    if (p == NULL) return reg;
+
+    // Obtener la cantidad total de registros en el archivo
+    fseek(p, 0, SEEK_END); // Ir al final del archivo
+    long fileSize = ftell(p); // Obtener la posición actual, que es el tamaño total del archivo
+    int numRegistros = fileSize / sizeof(Cirugia);
+
+    // Leer el último registro si hay al menos un registro en el archivo
+    if (numRegistros > 0) {
+        fseek(p, sizeof(Cirugia) * (numRegistros - 1), SEEK_SET); // Ir al inicio del último registro
+        fread(&reg, sizeof reg, 1, p);
+    }
+
+    fclose(p);
+    return reg;
+}
+

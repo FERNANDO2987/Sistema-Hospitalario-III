@@ -423,6 +423,7 @@ void PacienteManager::Eliminar(Paciente& reg)
                 {
 
                     cout << "NO SE PUEDE ELIMINAR PACIENTE Y CIRUGIA EN CURSO"<<endl;
+                    return;
                 }
 
             }
