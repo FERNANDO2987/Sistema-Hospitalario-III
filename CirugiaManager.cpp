@@ -72,8 +72,19 @@ bool CirugiaManager::validarID(Paciente &reg, Cirugia &aux, int &id)
             aux = archivoC.leerRegistro(j);
 
             return true;
+//int a = 0;
+            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 1)
+            {
 
 
+                setColor(GREEN);
+                cout << "El paciente tiene una Cirugia iniciada." << endl;
+
+                setColor(WHITE);
+  //              a++;
+                return true;
+
+            }
 
 
 
@@ -171,7 +182,7 @@ void CirugiaManager::Cargar()
     int id;
     string observacion;
     string antibioticos;
-    bool alergia;
+    int alergia;
     string implantes;
     string diagnostico;
     string tipoDeCirugia;
@@ -183,23 +194,18 @@ void CirugiaManager::Cargar()
     bool salir=false;
 
 
-
-    cls();
     do
     {
-
-
-
 
         cout << "Ingrese ID: ";
         id = obtenerEnteroValidado("");
 
 
-
         if (validarID(reg2, reg1, id))
         {
 
-            salir=true;
+
+            salir=false;
 
         }
         else if (!validarID(reg2, id))
@@ -208,21 +214,31 @@ void CirugiaManager::Cargar()
             salir=true;
         }
 
-        if(!PreguntaEstado(reg2, reg1, id))
+        if(PreguntaEstado(reg2, reg1, id))
         {
-            return;
-        }
-        bool op;
-        cout << "quiere cargar otra cirugia? 1-SI 0-NO ";
-        cin >> op;
-        if(!op)
+        int op;
+        do{
+            cout << "quiere cargar otra cirugia? 1-SI 0-NO ";
+            op = obtenerEnteroValidado("");
+            if (op <0 || op > 1){
+                cout << "error al ingresar valor, vuelva a intentarlo" << endl;
+            }
+        }while(op <0 || op > 1);
+        cls();
+        if(op == 0)
         {
             return;
         }
 
-        else
-        {
-            cin.ignore();
+        }
+        else{
+            return;
+        }
+
+
+
+
+
             cout << "Observaciones: ";
             getline(cin, observacion);
 
@@ -230,31 +246,13 @@ void CirugiaManager::Cargar()
             cout << "Antibioticos: ";
             getline(cin, antibioticos);
 
-
-//            cout << "Alergico: 1 = SI / 0 = NO ";
-//            cin >> alergia;
-//            cin.ignore();
-
+            do{
             cout << "Alergico: 1 = SI / 0 = NO ";
-            while (true)
-            {
-                string input;
-                cin >> input;
-
-                if (input.length() == 1 && isdigit(input[0]))
-                {
-                    alergia = stoi(input);
-
-                    if (alergia == 0 || alergia == 1)
-                    {
-                        break;  // Salir del bucle si la entrada es válida
-                    }
-                }
-
-                cin.clear();
-                cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                cout << "Entrada no valida. Por favor, ingrese 1 o 0." << endl;
+            alergia = obtenerEnteroValidado("");
+            if (alergia <0 || alergia > 1){
+                cout << "error al ingresar valor, vuelva a intentarlo" << endl;
             }
+            }while (alergia <0 || alergia > 1);
 
 
 
@@ -307,7 +305,7 @@ void CirugiaManager::Cargar()
             }
 
             cin.ignore();
-        }
+
 
 
 
@@ -333,7 +331,9 @@ bool CirugiaManager::PreguntaEstado(Paciente &reg, Cirugia &aux, int &id)
         {
             aux = archivoC.leerRegistro(j);
 
-            if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 1)
+
+
+            if(id == reg.getID()&& id == aux.getID()&& aux.getEstadoCirugias()== 1 )
             {
                 setColor(GREEN);
                 cout<<"Inicio de cirugia"<<endl;
@@ -342,7 +342,7 @@ bool CirugiaManager::PreguntaEstado(Paciente &reg, Cirugia &aux, int &id)
                 cls();
 
 
-                return true;
+                return false;
 
             }
             if(id == reg.getID()&& id == aux.getID() && aux.getEstadoCirugias()== 2)
@@ -381,8 +381,8 @@ bool CirugiaManager::PreguntaEstado(Paciente &reg, Cirugia &aux, int &id)
 
         }
     }
-
     return false;
+
 }
 
 ///=============================================================================
@@ -673,7 +673,7 @@ void CirugiaManager::listarCirugiasPorHC(Cirugia cirugia)
     cout << "Diagnostico: " << cirugia.getDiagnostico() << endl;
     cout << "Tipo de cirgugia: " << cirugia.getTipoDeCirugia() << endl;
     cout << "Procedimiento: " << cirugia.getProcedimientos() << endl;
-    cout << "Fecha de Visita: " << cirugia.getFechaOperacion().getAnio()<<"/"<<cirugia.getFechaOperacion().getMes()<<"/"<<cirugia.getFechaOperacion().getDia()<< endl;
+    cout << "Fecha de Visita: " << cirugia.getFechaOperacion().getDia()<<"/"<<cirugia.getFechaOperacion().getMes()<<"/"<<cirugia.getFechaOperacion().getAnio()<< endl;
     ///vuelve a la normalidad el color
 }
 

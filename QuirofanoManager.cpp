@@ -64,7 +64,7 @@ void QuirofanoManager::Cargar(){
 		int id;
         int NroCama;
         string NroQuirofano;
-        bool Ocupado;
+        int Ocupado;
         Tiempo tiempoProcedimiento;
 
         cout << "Ingrese ID: ";
@@ -77,11 +77,19 @@ void QuirofanoManager::Cargar(){
         NroCama = obtenerEnteroValidado1("");
 		cout << "Ingrese numero de quirofano : ";
 		getline(cin,NroQuirofano);
-		cout << "Quirofano ocupado : 1/SI - 0/NO ";
-		cin>>Ocupado;
+
+
+        do{
+            cout << "quirofano ocupado: 1-SI 0-NO ";
+            Ocupado = obtenerEnteroValidado1("");
+            if (Ocupado <0 || Ocupado > 1){
+                cout << "error al ingresar valor, vuelva a intentarlo" << endl;
+            }
+        }while(Ocupado <0 || Ocupado > 1);
+
 		if (Ocupado==1){
         cout << "Ingrese tiempo : "<<endl;
-		cin.ignore();
+		//cin.ignore();
 		reg.Cargar();
 		}
 		else{
@@ -182,7 +190,7 @@ void QuirofanoManager::quirofanosOcupados(){
 	 for(int i = 0; i<cantReg; i++){
 
 		reg = ArchivoQ.leerRegistro(i);
-		if(reg.getOcupado() == false){
+		if(reg.getOcupado() == 0){
 
 			manager.Listar(reg);
 				cout << endl;

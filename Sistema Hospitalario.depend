@@ -3334,7 +3334,7 @@
 	<string>
 	"Quirofano.h"
 
-1699412380 c:\users\lourdes\documents\github\sistema-hospitalario-iii\quirofano.h
+1700096813 c:\users\lourdes\documents\github\sistema-hospitalario-iii\quirofano.h
 	"Tiempo.h"
 	<string>
 
@@ -3344,7 +3344,9 @@
 	<string>
 	"Cirugia.h"
 
-1700012600 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugiamanager.cpp
+1700101681 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugiamanager.cpp
+	<limits>
+	<cctype>
 	<iostream>
 	<string>
 	"CirugiaManager.h"
@@ -3429,7 +3431,7 @@
 	"Paciente.h"
 	"Fecha.h"
 
-1700001872 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\pacientemanager.cpp
+1700098233 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\pacientemanager.cpp
 	<iostream>
 	<string.h>
 	<cstring>
@@ -3461,12 +3463,12 @@
 	"PacienteManager.h"
 	"rlutil.h"
 
-1699412380 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\quirofano.cpp
+1700096813 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\quirofano.cpp
 	<iostream>
 	<cstring>
 	"Quirofano.h"
 
-1699998605 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\quirofanomanager.cpp
+1700096825 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\quirofanomanager.cpp
 	<iostream>
 	<string>
 	<cctype>
@@ -3474,7 +3476,8 @@
 	"Quirofano.h"
 	"Tiempo.h"
 
-1700009090 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\tiempo.cpp
+1700013055 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\tiempo.cpp
 	<iostream>
+	"PacienteManager.h"
 	"Tiempo.h"
 

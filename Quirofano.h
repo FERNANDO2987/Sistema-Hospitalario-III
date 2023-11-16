@@ -26,24 +26,24 @@ class Quirofano
 		int _id;
         int _NroCama;
         char _NroQuirofano [10];
-        bool _Ocupado;
+        int _Ocupado;
         Tiempo _tiempoProcedimiento;
 
     public:
 		Quirofano();
 
-        Quirofano(int ID, int NroCama, std::string NroQuirofano, bool Ocupado, Tiempo TiempoProc);
+        Quirofano(int ID, int NroCama, std::string NroQuirofano, int Ocupado, Tiempo TiempoProc);
 
         void setID(int id);
         void setNroCama(int cama);
         void setNroQuirofano(std::string quirofano);
-        void setOcupado(bool ocupado);
+        void setOcupado(int ocupado);
         void setTiempoProcedimiento(Tiempo tiempo);
 
         int getID();
         int getNroCama();
         std::string getNroQuirofano();
-        bool getOcupado();
+        int getOcupado();
         Tiempo getTiempoProcedimiento();
 };
 

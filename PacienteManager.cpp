@@ -153,7 +153,7 @@ void PacienteManager::Cargar()
 // fechaHasta.CargaFechaOperacion();
             fechaHasta.setAnio(2023);
             fechaHasta.setMes(11);
-            fechaHasta.setDia(9);
+            fechaHasta.setDia(16);
 
             if (fechaNac.toString("YYYY/MM/DD") <= fechaHasta.toString("YYYY/MM/DD"))
             {
@@ -166,6 +166,10 @@ void PacienteManager::Cargar()
                 getline(cin, mail);
                 cout << "Diagnostico: ";
                 getline(cin, diagnostico);
+                cout << "Patologia: ";
+                getline(cin, patologia);
+
+
                 HC = generarHistoriaClinica();
                 cout << "Historial clinico: " << HC <<endl;
                 system("pause");

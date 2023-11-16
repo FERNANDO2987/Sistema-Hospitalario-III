@@ -22,7 +22,7 @@ using namespace std;
 Quirofano::Quirofano(){
 
 }
-Quirofano::Quirofano(int ID, int NroCama, string NroQuirofano, bool Ocupado, Tiempo TiempoProc){
+Quirofano::Quirofano(int ID, int NroCama, string NroQuirofano, int Ocupado, Tiempo TiempoProc){
 _id = ID;
 _NroCama = NroCama;
 strcpy(_NroQuirofano,NroQuirofano.c_str());
@@ -43,7 +43,7 @@ void Quirofano::setID(int id){
 _id = id;
 }
 
-void Quirofano::setOcupado(bool ocupado){
+void Quirofano::setOcupado(int ocupado){
 _Ocupado = ocupado;
 }
 
@@ -61,7 +61,7 @@ int Quirofano::getID(){
 return _id;
 }
 
-bool Quirofano::getOcupado(){
+int Quirofano::getOcupado(){
 return _Ocupado;
 }
 Tiempo Quirofano::getTiempoProcedimiento(){
