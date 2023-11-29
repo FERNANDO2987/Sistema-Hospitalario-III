@@ -3290,7 +3290,7 @@
 	<string>
 	"Cirugia.h"
 
-1700168896 c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugia.h
+1701215656 c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugia.h
 	<string>
 	"Fecha.h"
 
@@ -3339,13 +3339,13 @@
 	"Tiempo.h"
 	<string>
 
-1700168896 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugia.cpp
+1701215408 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugia.cpp
 	<string>
 	<cstring>
 	<string>
 	"Cirugia.h"
 
-1700168896 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugiamanager.cpp
+1701216657 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugiamanager.cpp
 	<limits>
 	<cctype>
 	<iostream>
@@ -3354,12 +3354,12 @@
 	"PacienteManager.h"
 	"rlutil.h"
 
-1700010983 c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugiamanager.h
+1701215656 c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugiamanager.h
 	"Cirugia.h"
 	"Paciente.h"
 	"ArchivoCirugia.h"
 
-1699579390 c:\users\lourdes\documents\github\sistema-hospitalario-iii\pacientemanager.h
+1701214936 c:\users\lourdes\documents\github\sistema-hospitalario-iii\pacientemanager.h
 	<iostream>
 	<string.h>
 	<cstring>
@@ -3432,7 +3432,7 @@
 	"Paciente.h"
 	"Fecha.h"
 
-1700168896 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\pacientemanager.cpp
+1701214936 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\pacientemanager.cpp
 	<iostream>
 	<string.h>
 	<cstring>

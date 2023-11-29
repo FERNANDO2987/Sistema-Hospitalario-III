@@ -56,6 +56,9 @@ public:
     void listarPaciente(Paciente paciente);
     // Función para generar una historia clínica de 5 dígitos sin repetición
     int generarHistoriaClinica();
+    int generarHC();
+
+
 
 
 

@@ -170,7 +170,7 @@ void PacienteManager::Cargar()
                 getline(cin, patologia);
 
 
-                HC = generarHistoriaClinica();
+                HC = generarHC();
                 cout << "Historial clinico: " << HC <<endl;
                 system("pause");
                 cls();
@@ -299,6 +299,12 @@ int PacienteManager::generarID()
 {
     return _archivo.getCantidadRegistros() + 1;
 }
+
+int PacienteManager::generarHC()
+{
+    return _archivo.getCantidadRegistros() + 1000;
+}
+
 
 
 int esEnteroValido(char cadena[10])
@@ -552,7 +558,7 @@ void PacienteManager::modificarPaciente()
     cout << "Ingrese nuevo Genero : ";
     getline(cin, genero);
     cout << "Ingrese nuevo Numero de Documento : ";
-    cin>>documento;
+    documento=obtenerEnteroValidado("");
     cout << "Ingrese nueva Fecha de Naciemiento  : "<<endl;
     fecha.Cargar();
     cout << "Ingrese un nuevo Email : ";

@@ -154,6 +154,11 @@ bool CirugiaManager::validarID(Paciente &reg, int &id)
     return false;
 }
 
+int CirugiaManager::generarHC()
+{
+    return _archivo.getCantidadRegistros() + 1000;
+}
+
 
 
 ///=============================================================================
@@ -182,6 +187,7 @@ void CirugiaManager::Cargar()
     int idCirugia;
     bool salir=false;
     int estadoAnterior;
+    int historiaClinica;
 
 
     do
@@ -273,8 +279,8 @@ void CirugiaManager::Cargar()
             fechalimite.setAnio(2023);
             fechalimite.setMes(11);
             fechalimite.setDia(7);
-            idCirugia = generarID();
-            cout << "IdCirugia : " <<idCirugia<<endl;
+           // idCirugia = generarID();
+            //cout << "IdCirugia : " <<idCirugia<<endl;
             //cout << "IDCirugia: " <<idCirugia<<endl;
 //            if(validarID(reg1,idCirugia))
 //            {
@@ -284,14 +290,18 @@ void CirugiaManager::Cargar()
 
             if (fechaOperacion.toString("YYYY/MM/DD") <= fechalimite.toString("YYYY/MM/DD"))
             {
-                cout << "La fecha de operaci�n/visita no puede ser antes de Noviembre del 2023. Por favor, ingrese una fecha v�lida." << endl;
+                cout << "La fecha de operacion/visita no puede ser antes de Noviembre del 2023. Por favor, ingrese una fecha v�lida." << endl;
             }
             else
             {
+                idCirugia = generarID();
+                cout << "IdCirugia : " <<idCirugia<<endl;
                 estadoCirugia = 1;
                 estadoAnterior=0;
+                historiaClinica = generarHC();
 
-                Cirugia reg(estadoCirugia, id, observacion, antibioticos, alergia, implantes, diagnostico, tipoDeCirugia, procedimientos, estadoCirugia, fechaOperacion,idCirugia,estadoAnterior);
+
+                Cirugia reg(estadoCirugia, id, observacion, antibioticos, alergia, implantes, diagnostico, tipoDeCirugia, procedimientos, estadoCirugia, fechaOperacion,idCirugia,estadoAnterior,historiaClinica);
                 if(_archivo.guardar(reg)==true)
                 {
                     salir=true;
@@ -519,6 +529,7 @@ void CirugiaManager::buscarHC()
     hc = obtenerEnteroValidado("");
     cout << endl;
     bool encontro = false;
+    int id;
 
     for (int i = 0; i < cantRegPacientes; i++)
     {
@@ -527,22 +538,25 @@ void CirugiaManager::buscarHC()
         // Only list the patient once if found
         if (paciente.getHistorialClinico() == hc && paciente.getEstado() == true)
         {
+            id = paciente.getID();
             reg.Listar(paciente);
             encontro = true;
 
         }
+    }
 
         // List all surgeries associated with the patient
         for (int j = 0; j < cantRegCirugias; j++)
         {
+
             cirugia = archivoC.leerRegistro(j);
-            if (paciente.getHistorialClinico() == hc && paciente.getEstado() == true)
+            if (cirugia.getID() == id && cirugia.getEstado() == true )
             {
                 regCirugia.listarCirugiasPorHC(cirugia);
                 cout << "-------------------------------------" << endl;
             }
         }
-    }
+
 
     if (encontro == false)
     {
@@ -706,22 +720,24 @@ void CirugiaManager::modificarCursoDeCirugia()
     int id;
     cout <<"Ingrese ID de la Cirugia a buscar: ";
     id=obtenerEnteroValidado("");
-
+    bool encontro = false;
     int nuevoCurso;
 
     for(int i = 0; i<cantRegCirugia; i++)
     {
 
-        //cirugia = archivo.leerRegistro(i);
+        cirugia = archivo.leerRegistro(i);
 
-        if(cirugia.getIdCirugia()==id && cirugia.getEstado()==true)
+        if(cirugia.getIdCirugia()==id && cirugia.getEstado()==true && cirugia.getEstadoCirugias() != 4)
         {
 
             reg.Listar(cirugia);
+            encontro = true;
         }
-    }
 
-    cout << "Nuevo Estado de cirugia: ";
+    }
+    if (encontro){
+            cout << "Nuevo Estado de cirugia: ";
     nuevoCurso = obtenerEnteroValidado("");
 
     cout << "================="<<endl;
@@ -743,6 +759,13 @@ void CirugiaManager::modificarCursoDeCirugia()
             reg.Listar(cirugia);
         }
     }
+
+
+    }
+    else{
+        cout << "Esa cirugia no se pudo modificar o ya fue finalizada" << endl;
+    }
+
     cin.ignore();
 }
 ///================================FIN==========================================
@@ -767,7 +790,7 @@ void CirugiaManager::EliminarCirugia(Cirugia &aux)
     for( i = 0; i<cantReg; i++)
     {
         aux = archivo.leerRegistro(i);
-        if(aux.getEstadoCirugias() == 1 && id == aux.getID()&& aux.getEstado()== true)
+        if(aux.getEstadoCirugias() == 1 && id == aux.getIdCirugia()&& aux.getEstado()== true)
         {
 
             aux.setEstado(false);

@@ -50,6 +50,9 @@ class CirugiaManager
 		void promedioDeEtapas();
 		Cirugia ObtenerCirugiaPorIdPaciente(int idPaciente);
 
+		int generarHC();
+
+
 bool validarID(Paciente &reg, int &id);
 bool validarID(Cirugia &reg, int &id);
 	private:
