@@ -275,10 +275,10 @@ void CirugiaManager::Cargar()
 
 
             cout << "Fecha de Operacion/visita (dd mm aaaa): ";
-            fechaOperacion.Cargar();
+            fechaOperacion.CargarCirugia();
             fechalimite.setAnio(2023);
             fechalimite.setMes(11);
-            fechalimite.setDia(7);
+            fechalimite.setDia(30);
            // idCirugia = generarID();
             //cout << "IdCirugia : " <<idCirugia<<endl;
             //cout << "IDCirugia: " <<idCirugia<<endl;
@@ -290,7 +290,7 @@ void CirugiaManager::Cargar()
 
             if (fechaOperacion.toString("YYYY/MM/DD") <= fechalimite.toString("YYYY/MM/DD"))
             {
-                cout << "La fecha de operacion/visita no puede ser antes de Noviembre del 2023. Por favor, ingrese una fecha v�lida." << endl;
+                cout << "La fecha de operacion/visita no puede ser antes del dia de hoy. Por favor, ingrese una fecha valida." << endl;
             }
             else
             {
@@ -433,7 +433,7 @@ void CirugiaManager::Listar(Cirugia cirugia)
             break;
 
         }
-        cout << "Ingrese ID:" << cirugia.getID() << endl;
+        cout << "ID:" << cirugia.getID() << endl;
         cout << "Observaciones: " << cirugia.getObservaciones() << endl;
         cout << "Antibioticos: " << cirugia.getAntibioticos() << endl;
         cout << "Alergico: 1 = SI / 0 = NO " << cirugia.getAlergia() << endl;
@@ -786,7 +786,7 @@ void CirugiaManager::EliminarCirugia(Cirugia &aux)
     int cantReg = archivo.getCantidadRegistros();
 
     cout << "INGRESE ID DE LA CIRUGIA A ELIMINAR: ";
-    cin>>id;
+    id = obtenerEnteroValidado("");
     for( i = 0; i<cantReg; i++)
     {
         aux = archivo.leerRegistro(i);
@@ -796,6 +796,7 @@ void CirugiaManager::EliminarCirugia(Cirugia &aux)
             aux.setEstado(false);
             if(reg.Modificar(aux,i))
             {
+
                 cout << "La cirugia con el id #"<<id<< " se ha eliminado correctamente." <<endl;
 
                 return;
@@ -805,7 +806,7 @@ void CirugiaManager::EliminarCirugia(Cirugia &aux)
 
     }
 
-    cout << "NO SE PUEDE ELIMINAR CIRUGIA QUE YA ESTA EN PROCEDIMIENTO!."<<endl;
+    //cout << "NO SE PUEDE ELIMINAR CIRUGIA QUE YA ESTA EN PROCEDIMIENTO!."<<endl;
 
     cin.ignore();
 }

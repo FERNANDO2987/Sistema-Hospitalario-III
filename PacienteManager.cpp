@@ -401,6 +401,7 @@ void PacienteManager::Eliminar(Paciente& reg)
     cout << "INGRESE ID A BUSCAR:";
     id = obtenerEnteroValidado("");
     cout << endl;
+    bool elimino = false;
     for(int i = 0; i<cantRegC; i++)
     {
 
@@ -417,20 +418,15 @@ void PacienteManager::Eliminar(Paciente& reg)
                 {
 
                     reg.setEstado(false);
+                    //cirugia.setEstadoCirugias(4);
                     cirugia.setEstado(false);
 
                     Modificar(reg,i);
                     cirugiaManager.EliminarCirugia(cirugia);
                     pos = i;
-                    cout << "ELIMINACION EXITOSA.!"<<endl;
-                    cout << "Se elimino paciente: " << id << " Y su cirugia."<<endl;
+                    elimino = true;
                 }
-                else
-                {
 
-                    cout << "NO SE PUEDE ELIMINAR PACIENTE Y CIRUGIA EN CURSO"<<endl;
-                    return;
-                }
 
             }
 
@@ -438,7 +434,16 @@ void PacienteManager::Eliminar(Paciente& reg)
         }
 
     }
+        if (elimino == true){
+        cout << "ELIMINACION EXITOSA.!"<<endl;
+        cout << "Se elimino paciente: " << id << " Y su cirugia."<<endl;
+        }
+        else{
+            cout << "NO SE PUEDE ELIMINAR PACIENTE Y CIRUGIA EN CURSO"<<endl;
+        }
 
+
+return;
 }
 
 void PacienteManager::buscarPacientePorID()

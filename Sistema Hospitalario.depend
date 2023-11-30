@@ -3294,7 +3294,7 @@
 	<string>
 	"Fecha.h"
 
-1699498071 c:\users\lourdes\documents\github\sistema-hospitalario-iii\fecha.h
+1701307065 c:\users\lourdes\documents\github\sistema-hospitalario-iii\fecha.h
 	<iostream>
 	<cstring>
 
@@ -3345,7 +3345,7 @@
 	<string>
 	"Cirugia.h"
 
-1701216657 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugiamanager.cpp
+1701307825 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\cirugiamanager.cpp
 	<limits>
 	<cctype>
 	<iostream>
@@ -3383,7 +3383,7 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1700009090 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\fecha.cpp
+1701307320 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\fecha.cpp
 	<iostream>
 	"Fecha.h"
 	<string>
@@ -3411,7 +3411,7 @@
 	"Profesional.h"
 	"ArchivoProfesional.h"
 
-1700009380 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\menu.cpp
+1701300909 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\menu.cpp
 	<iostream>
 	<cstring>
 	<cstdio>
@@ -3432,7 +3432,7 @@
 	"Paciente.h"
 	"Fecha.h"
 
-1701214936 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\pacientemanager.cpp
+1701308229 source:c:\users\lourdes\documents\github\sistema-hospitalario-iii\pacientemanager.cpp
 	<iostream>
 	<string.h>
 	<cstring>

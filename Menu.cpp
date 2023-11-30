@@ -640,7 +640,7 @@ void Menu::MenuCirugia()
     {
 
         showItem(" CARGAR CIRUGIA ",40, 11, y==0);
-        showItem(" BUSCAR CIRUGIA POR ID ",40, 12, y==1);
+        showItem(" BUSCAR CIRUGIA POR HC ",40, 12, y==1);
         showItem(" LISTADO DE CIRUGIAS ",40, 13, y==2);
         showItem(" CAMBIAR ESTADO DE LA CIRUGIA ",40, 14, y==3);
         showItem(" MOSTRAR CIRUGIA POR APELLIDO ",40, 15, y==4);

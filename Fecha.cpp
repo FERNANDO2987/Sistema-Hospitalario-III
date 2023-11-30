@@ -169,7 +169,38 @@ while (_dia>29 && _mes == 2 || _mes < 1 || _mes > 12 || _dia > 30 && _mes< 8 && 
 
 cout << "ANIO: ";
 _anio = obtenerEnteroValidado ("");
-while(_dia == 29 && _mes == 2 && ((_anio % 4 == 0 && _anio % 100 != 0)|| _anio % 400 == 0 ) -1 || _anio <1950 || _anio>2023){
+while(_dia == 29 && _mes == 2 && ((_anio % 4 == 0 && _anio % 100 != 0)|| _anio % 400 == 0 ) -1 || _anio < 1950 || _anio > 2023){
+
+	cout << "Anio invalido. Por favor, ingrese un nuevo anio." << endl;
+	Cargar();
+	//cout << "ANIO: ";
+	//_anio = obtenerEnteroValidado ("");
+}
+}
+
+void Fecha::CargarCirugia(){
+	cout << "DIA: ";
+_dia = obtenerEnteroValidado ("");
+while(_dia>31 || _dia < 1){
+	cout << "DIA invalido, por favor, ingrese un dia: ";
+	_dia = obtenerEnteroValidado ("");
+}
+
+cout << "MES: ";
+_mes = obtenerEnteroValidado ("");
+while (_dia>29 && _mes == 2 || _mes < 1 || _mes > 12 || _dia > 30 && _mes< 8 && _mes %2== 0 || _dia > 30 && _mes > 8 && _mes%2==1) {
+
+
+        cout << "Mes invalido. Por favor, ingrese un mes válido (1 a 12)." << endl;
+
+        cout << "MES: ";
+        _mes = obtenerEnteroValidado ("");
+
+    }
+
+cout << "ANIO: ";
+_anio = obtenerEnteroValidado ("");
+while(_dia == 29 && _mes == 2 && ((_anio % 4 == 0 && _anio % 100 != 0)|| _anio % 400 == 0 ) -1 ||  _anio < 2023){
 
 	cout << "Anio invalido. Por favor, ingrese un nuevo anio." << endl;
 	Cargar();

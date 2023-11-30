@@ -41,6 +41,7 @@ public:
     void Cargar();
     void CargaFechaOperacion();
     void Mostrar();
+    void CargarCirugia();
 
 
     void setDia(int d);
